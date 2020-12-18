@@ -6,7 +6,3 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/Hello, World!/i);
   expect(linkElement).toBeInTheDocument();
 });
-
-
-git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"

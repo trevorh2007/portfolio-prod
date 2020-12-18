@@ -5,3 +5,5 @@
 - Using postgresql for database
 
 - Use of react hooks
+- Unit testing
+- Snapshot testing
