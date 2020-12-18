@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import './App.scss'
 import Container from 'react-bootstrap/Container'
 import HomePage from './components/home-page/home-page'
 import NavBar from './components/nav-bar/nav-bar'
