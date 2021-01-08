@@ -1,9 +1,9 @@
 import React from 'react'
 import './landing-screen.scss'
 
-const LandingScreen = () => {
+const LandingScreen = ({pageRefs}) => {
   return (
-    <section id="landing" className="landing-section">
+    <section id="home" className="landing-section" ref={el => pageRefs.current = { ...pageRefs.current, home: el }}>
       <div className="landing-flex">
         <div className="landing-text">
           <div className="flex-row">

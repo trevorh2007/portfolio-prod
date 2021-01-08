@@ -1,22 +1,26 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './nav-bar.scss'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
 
-function NavBar(){
+function NavBar({ pageRefs }){
+    function scrollIntoView(type) {
+        pageRefs.current[type].scrollIntoView({ behavior: "smooth" });
+    }
+    
     return (
-        <Navbar bg="" expand="md" fixed="top" id="navbar">
-            <Navbar.Brand href="#home">Trevor Howard Software Developer</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ml-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#about">About</Nav.Link>
-                    <Nav.Link href="#projects">Projects</Nav.Link>
-                    <Nav.Link href="#contact">Contact</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
+        <div className="fixed-nav">
+            <nav>  
+                <div className="header">
+                    <div>Trevor Howard</div>
+                    <div>Software Developer</div>
+                </div>
+                <div className="nav-bar">
+                    <div className="page-link" onClick={() => scrollIntoView('home')}>Home</div>  
+                    <div className="page-link" onClick={() => scrollIntoView('about')}>About</div>
+                    <div className="page-link" onClick={() => scrollIntoView('projects')}>Projects</div>
+                    <div className="page-link" onClick={() => scrollIntoView('contact')}>Contact</div>  
+                </div>  
+            </nav>
+        </div>
     )
 }
 
