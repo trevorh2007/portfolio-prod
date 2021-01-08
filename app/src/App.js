@@ -1,16 +1,15 @@
 import React from 'react'
 import './App.scss'
-import Container from 'react-bootstrap/Container'
-import HomePage from './components/home-page/home-page'
+import LandingScreen from './components/landing-screen/landing-screen'
+import AboutScreen from './components/about-screen/about-screen'
 import NavBar from './components/nav-bar/nav-bar'
 
 const App = () => {
   return(
-    <div className="App">
+    <div>
       <NavBar />
-      <Container>
-        <HomePage />
-      </Container>
+      <LandingScreen />
+      <AboutScreen />
     </div>
   )
 }
