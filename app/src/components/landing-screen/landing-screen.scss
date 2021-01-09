@@ -1,4 +1,4 @@
-@import '../../utilities/sass-variables/sass-variables.scss';
+@import '../../utilities/sass/sass-variables.scss';
 
 .landing-section {
     height: 100vh;
@@ -32,6 +32,25 @@
             .flex-row {
                 display: flex;
                 flex-direction: row;
+            }
+            .about-me-button {
+                margin-top: 50px;
+                &:hover {
+                    cursor: pointer;
+                }
+                @include md {
+                    @include btn__split(#19535F, #0B7A75, #fff);
+                }
+                .arrow {
+                    border: solid #fff;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 4px;
+                }
+                .right {
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                }
             }
         }
     }

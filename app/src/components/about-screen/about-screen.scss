@@ -1,8 +1,26 @@
-@import '../../utilities/sass-variables/sass-variables.scss';
+@import '../../utilities/sass/sass-variables.scss';
+@import '../../utilities/sass/shared.scss';
 
 .about-section {
     height: 100vh;
     color: #fff;
     background-color: #333;
     padding-top: 50px;
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .portrait {
+        width: 25%;
+        img {
+            border-radius: 50%;
+        }
+    }
+    .elevator-pitch {
+        width: 50%;
+        font-size: 24px;
+    }
 }

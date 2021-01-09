@@ -1,0 +1,99 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
+ // Custom devices
+@mixin rwd($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+ }
+
+ //split button mixin
+@mixin btn__split($colorLeft, $colorRight, $textColor) {
+	.btn {
+		position: relative;
+		letter-spacing: 0.15em;
+		margin: 0 auto;
+		padding: 1rem 2.5rem;
+		background: transparent;
+		outline: none;
+		font-size: 24px;
+        color: $textColor;
+        z-index: 1;
+        border-radius: 30px;
+
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 50%;
+			transform: skewX(30deg);
+			transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			z-index: -2;
+		}
+		&::before {
+			background-color: $colorLeft;
+			top: -.75rem;
+			left: 1rem;
+		}
+		&::after {
+			background-color: $colorRight;
+			top: 1rem;
+			left: 8rem;
+		}
+		&:hover {
+			&::before,
+			&::after {
+				top: 0;
+                transform: skewx(0deg);
+                border-radius: 30px;
+			}
+			&::after {
+                left: 0.5rem;
+                border-radius: 25px 0 0 25px;
+			}
+			&::before {
+                left: 9rem;
+                border-radius: 0 25px 25px 0;
+			}
+		}
+	}
+}
