@@ -1,7 +1,8 @@
 @import '../../utilities/sass-variables/sass-variables.scss';
 
 .about-section {
-    height: calc(100vh - 50px);
+    height: 100vh;
     color: #fff;
     background-color: #333;
+    padding-top: 50px;
 }

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import './nav-bar.scss'
 
 function NavBar({ pageRefs }){
