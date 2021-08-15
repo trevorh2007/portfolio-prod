@@ -4,7 +4,11 @@ import './projects-screen.scss'
 const ProjectsScreen = ({pageRefs}) => {
   return (
     <section id="projects" className="projects-section" ref={el => pageRefs.current = { ...pageRefs.current, projects: el }}>
-        Projects Section
+      <div className="container">
+        <div className="section-header">
+          Projects
+        </div>
+      </div>
     </section>
   )
 }
