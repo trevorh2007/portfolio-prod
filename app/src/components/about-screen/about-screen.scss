@@ -4,23 +4,41 @@
 .about-section {
     height: 100vh;
     color: #fff;
-    background-color: #333;
+    background-color: rgba(255, 255, 255, 0);
     padding-top: 50px;
 
     .flex-row {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        @include md {
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
     .portrait {
-        width: 25%;
+        width: 50%;
         img {
             border-radius: 50%;
+            width: 100%;
+        }
+        @include md {
+            width: 25vw;
+            max-width: 33%;
         }
     }
     .elevator-pitch {
-        width: 50%;
-        font-size: 24px;
+        width: 90%;
+        font-size: 16px;
+        text-align: center;
+        @include md {
+            width: 60%;
+            text-align: left;
+            font-size: 18px;
+        }
+        @include lg {
+            font-size: 24px;
+        }
     }
 }

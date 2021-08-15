@@ -5,3 +5,19 @@
     justify-content:center;
     text-transform: uppercase;
 }
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @include sm {
+        width: 576px;
+    }
+    @include md {
+        width: 768px;
+    }
+    @include lg {
+        width: 992px;
+    }
+}
