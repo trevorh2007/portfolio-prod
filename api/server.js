@@ -10,20 +10,14 @@ const users = [];
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../app/build')));
 
-app.get('/api/users', (req, res) => {
+app.get('/api/contacct', (req, res) => {
   console.log('api/users called!')
   res.json(users);
 });
 
-app.post('/api/user', (req, res) => {
-  const user = req.body.user;
-  console.log('Adding user:::::', user);
-  users.push(user);
-  res.json("user addedd");
-});
-
 app.get('/', (req,res) => {
   res.sendFile(path.join(__dirname, '../app/build/index.html'));
+  console.log('should see this!')
 });
 
 app.listen(port, () => {
