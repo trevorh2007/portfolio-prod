@@ -11,6 +11,7 @@
 # TODO
 
 - Contact back end hook up, then decide what service to use to send email/notification to phone
+    - Decided to use nodemailer
 - project section filled out with Discord bot app and other applications
 - about section to add a link to contact page
 - about section re-word elevator pitch
