@@ -47,6 +47,37 @@
                 }
             
             }
+            .resume-container {
+                position: relative;
+                display: inline-block;
+                .resume-dropdown {
+                    position: absolute;
+                    top: 25px;
+                    right: 10px;
+                    width: 95px;
+                    z-index: 2;
+                    background: #999;
+                    color: #fff;
+                    text-align: right;
+                    @include sm {
+                        top: 30px;
+                        right: 25px;
+                        width: 150px;
+                    }
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    li {
+                        padding: 8px 12px;
+                        &:hover {
+                            background-color: rgba(0,0,0, 0.14);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
         }
     }
 }

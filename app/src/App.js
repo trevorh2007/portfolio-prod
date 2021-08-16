@@ -11,7 +11,7 @@ const App = () => {
 
   useEffect(() => {
     document.title = "Trevor Howard"
-  })
+  }, [])
 
   return(
     <div className="app">
