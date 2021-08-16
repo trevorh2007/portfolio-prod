@@ -15,7 +15,8 @@
 - about section to add a link to contact page
 - about section re-word elevator pitch
 - add resume to be viewed in browser as well as be able to download in docx/pdf
-- add footer, not sure what content to add to footer, but bottom of page is somewhat lacking
+    - above is technically just pdf link, add it so that the link has a drop down and 2 options (pdf/docx) and both clickable/viewable/downloadable in browser
+- add footer, not sure what content to add to footer, but bottom of page is somewhat lacking (good place to add linkedin/github icons)
 - fix it so that #{page}-section scss doesn't need to be a calc of vh - px, things like about/contact are too long
 - remove section headers (or restyle them to be better looking)
 - navbar links, add highlight under where you currently are on the page, example: if you click about then "about" in navbar will have highlight underneath

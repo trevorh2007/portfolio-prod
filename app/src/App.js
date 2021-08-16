@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import './App.scss'
 import LandingScreen from './components/landing-screen/landing-screen'
 import AboutScreen from './components/about-screen/about-screen'
@@ -8,6 +8,10 @@ import ContactScreen from './components/contact-screen/contact-screen'
 
 const App = () => {
   const pageRefs = useRef({})
+
+  useEffect(() => {
+    document.title = "Trevor Howard"
+  })
 
   return(
     <div className="app">
