@@ -56,9 +56,13 @@
                     right: 10px;
                     width: 95px;
                     z-index: 2;
-                    background: #999;
+                    border-left: 1px solid white;
+                    border-right: 1px solid white;
+                    border-bottom: 1px solid white;
                     color: #fff;
                     text-align: right;
+                    // visibility: hidden;
+                    // transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
                     @include sm {
                         top: 30px;
                         right: 25px;
@@ -72,7 +76,8 @@
                     li {
                         padding: 8px 12px;
                         &:hover {
-                            background-color: rgba(0,0,0, 0.14);
+                            background-color: #fff;
+                            color: black;
                             cursor: pointer;
                         }
                     }
