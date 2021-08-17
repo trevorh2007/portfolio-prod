@@ -5,6 +5,7 @@ import AboutScreen from './components/about-screen/about-screen'
 import NavBar from './components/nav-bar/nav-bar'
 import ProjectsScreen from './components/projects-screen/projects-screen'
 import ContactScreen from './components/contact-screen/contact-screen'
+import Footer from './components/footer/footer'
 
 const App = () => {
   const pageRefs = useRef({})
@@ -20,6 +21,7 @@ const App = () => {
       <AboutScreen pageRefs={pageRefs}/>
       <ProjectsScreen pageRefs={pageRefs}/>
       <ContactScreen pageRefs={pageRefs}/>
+      <Footer />
     </div>
   )
 }
