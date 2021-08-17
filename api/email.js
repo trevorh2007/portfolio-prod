@@ -1,28 +1,37 @@
 const nodemailer = require('nodemailer')
 
-async function main() {
+async function main(name, email, body) {
     let transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: "gmail",
         auth: {
-            user: 'trevorhoward2@gmail.com',
-            pass: 'Whit3H4t5'
+            user: process.env.CONTACT_EMAIL,
+            pass: process.env.CONTACT_PASS
         }
     })
 
     var mailOptions = {
-        from: 'trevorhoward2@gmail.com',
+        from: 'runelite.throwaway2@gmail.com',
         to: 'trevorhoward2@gmail.com',
         subject: 'Contact from portfolio',
-        text: 'Just a test to see if the email sends'
+        text: `
+            Name: ${name}\n
+            Email: ${email}\n
+            Body: ${body}
+        `
     }
 
-    transporter.sendMail(mailOptions, (err, info) => {
-        if (err) {
-            console.log(err)
-        } else {
-            console.log('Email sent: ' + info.response)
-        }
+    return new Promise((resolve, reject) => {
+        transporter.sendMail(mailOptions, (err, info) => {
+            if (err) {
+                console.log(err)
+                reject('Fail')
+            } else {
+                console.log('Email sent: ' + info.response)
+                resolve('OK')
+            }
+        })
     })
+
 }
 
 module.exports = { main }
