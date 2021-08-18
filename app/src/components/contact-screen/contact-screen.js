@@ -5,6 +5,7 @@ import './contact-screen.scss'
 const ContactScreen = ({pageRefs}) => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
+  const [emailValid, setEmailValid] = useState(true)
   const [info, setInfo] = useState('')
   const [emailError, setEmailError] = useState(false)
   const [emailSent, setEmailSent] = useState(false)
@@ -34,6 +35,13 @@ const ContactScreen = ({pageRefs}) => {
       })
   }
 
+  const handleEmail = (evt) => {
+    const email = evt.target.value
+    const emailRegex = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/
+    setEmail(email)
+    emailRegex.test(email) || email === '' ? setEmailValid(true) : setEmailValid(false)
+  }
+
   return (
     <section id="contact" className="contact-section" ref={el => pageRefs.current = { ...pageRefs.current, contact: el }}>
         <div className="container">
@@ -52,12 +60,17 @@ const ContactScreen = ({pageRefs}) => {
                   onChange={e => setName(e.target.value)}
                   placeholder="Name"
                 />
-                <input
-                  type="text"
-                  value={email}
-                  onChange={e => setEmail(e.target.value)}
-                  placeholder="Email (optional)"
-                />
+                <div className="email-flex-column">
+                  <input
+                    type="text"
+                    value={email}
+                    onChange={e => handleEmail(e)}
+                    placeholder="Email"
+                  />
+                  {!emailValid && (
+                    <div className="email-invalid">Please enter your email address, or leave this field blank.</div>
+                  )}
+                </div>
               </div>
               <textarea
                 type="text"

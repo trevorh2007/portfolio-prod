@@ -39,6 +39,18 @@
                     border-color: #00ffff;
                 }
             }
+            .email-flex-column {
+                width: 100%;
+                @include sm {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
+                .email-invalid {
+                    color: red;
+                    font-size: .8rem;
+                }
+            }
         }
         textarea {
             height: 90px;
