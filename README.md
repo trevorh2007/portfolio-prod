@@ -14,7 +14,12 @@
     - [X] Decided to use nodemailer
     - [x] front end email form validator, something simple like regex, no need to have backend validation
     - [x] maybe make submit button unclickable while email is sending? and have it have a little loading icon while sending before confirmation message pops up
+- [ ] contact section still isn't to my liking, maybe create floating labels?
+    - [ ] condense the forms, seems to spread apart on large devices (actually like how it looks on mobile currently)
 - [ ] project section filled out with Discord bot app and other applications
+    - [ ] aquire screenshots of each project so you can cycle through them when clicked (maybe 3-5 images per project)
+    - [ ] create modal that opens when clicking on a project to see more info of the project (link to project page and code)
+    - [ ] carousel to go through images
 - [ ] about section to add a link to contact page
 - [ ] about section re-word elevator pitch
 - [X] add resume to be viewed in browser as well as be able to download in docx/pdf
