@@ -12,8 +12,8 @@
 
 - [X] Contact back end hook up, then decide what service to use to send email/notification to phone
     - [X] Decided to use nodemailer
-    - [ ] front end email form validator, something simple like regex, no need to have backend validation
-    - [ ] maybe make submit button unclickable while email is sending? and have it have a little loading icon while sending before confirmation message pops up
+    - [x] front end email form validator, something simple like regex, no need to have backend validation
+    - [x] maybe make submit button unclickable while email is sending? and have it have a little loading icon while sending before confirmation message pops up
 - [ ] project section filled out with Discord bot app and other applications
 - [ ] about section to add a link to contact page
 - [ ] about section re-word elevator pitch
