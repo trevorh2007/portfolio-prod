@@ -9,10 +9,10 @@ const Footer = () => {
                 <HiChevronDoubleUp />
             </div>
             <div className="icon-wrap flex-row">
-                <a href="https://www.linkedin.com/in/trevor-howard-ut/">
+                <a href="https://www.linkedin.com/in/trevor-howard-ut/" target="_blank" rel="noopener noreferrer">
                     <RiLinkedinBoxLine />
                 </a>
-                <a href="https://github.com/trevorh2007">
+                <a href="https://github.com/trevorh2007" target="_blank" rel="noopener noreferrer">
                     <RiGithubFill />
                 </a>
             </div>
