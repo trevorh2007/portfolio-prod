@@ -13,6 +13,13 @@ const ContactScreen = ({pageRefs}) => {
   const onSubmit = (evt) => {
     evt.preventDefault();
 
+    var disableSubmit = document.getElementsByClassName('submit-btn')[0]
+    var loadingIcon = document.getElementById('loading').classList
+
+    disableSubmit.disabled = true
+    loadingIcon.add('lds-hourglass')
+
+
     const requestOptions = {
       mode: 'cors',
       method: 'POST',
@@ -32,6 +39,8 @@ const ContactScreen = ({pageRefs}) => {
         } else {
           setEmailError(true)
         }
+        disableSubmit.disabled = false
+        loadingIcon.remove('lds-hourglass')
       })
   }
 
@@ -78,7 +87,8 @@ const ContactScreen = ({pageRefs}) => {
                 onChange={e => setInfo(e.target.value)}
                 placeholder="Additional Info (please include preferred way to contact you)"
               />
-              <input type="submit" value="Submit" className="btn submit-btn"/>
+              <input type="submit" value="Submit" className="btn submit-btn" disabled={!emailValid}/>
+              <div id="loading" />
             </form>
           )}
           {emailSent && (
