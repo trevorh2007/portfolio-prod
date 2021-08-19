@@ -32,6 +32,7 @@
 - [ ] fix it so that #{page}-section scss doesn't need to be a calc of vh - px, things like about/contact are too long
 - [x] remove section headers (or restyle them to be better looking)
 - [ ] navbar links, add highlight under where you currently are on the page, example: if you click about then "about" in navbar will have highlight underneath
-    - [ ] hovering over links should change the background color to indicate what you are hovering over
-    - [ ] navbar "Resume" should possibly be changed to a "hover" dropdown instead of clicking as it might seem a little confusing, maybe also add animated arrow next to it for better clarification
+    - [x] hovering over links should change the background color to indicate what you are hovering over
+    - [x] navbar "Resume" should possibly be changed to a "hover" dropdown instead of clicking as it might seem a little confusing, maybe also add animated arrow next to it for better clarification
+        - [x] resume hover design rethought and not needed
 - [ ] navbar mobile, condense to hamburger menu maybe? adding in resume link will likely make this a must (extra credit: do hamburger menu without a library)

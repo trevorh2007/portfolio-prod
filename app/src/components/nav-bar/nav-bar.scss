@@ -41,6 +41,7 @@
                 margin-right: 12px;
                 &:hover {
                     cursor: pointer;
+                    color: #00ffff;
                 }
                 @include sm {
                     margin-right: 25px;
