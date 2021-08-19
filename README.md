@@ -35,4 +35,6 @@
     - [x] hovering over links should change the background color to indicate what you are hovering over
     - [x] navbar "Resume" should possibly be changed to a "hover" dropdown instead of clicking as it might seem a little confusing, maybe also add animated arrow next to it for better clarification
         - [x] resume hover design rethought and not needed
-- [ ] navbar mobile, condense to hamburger menu maybe? adding in resume link will likely make this a must (extra credit: do hamburger menu without a library)
+- [x] navbar mobile, condense to hamburger menu maybe? adding in resume link will likely make this a must (extra credit: do hamburger menu without a library)
+    - [ ] the "more about me >" button on mobile the arrow (>) shows over the hamburger menu when expanded, fix it
+    - [ ] the "resume" link when menu is expanded needs to be reconfigured for mobile to be a better ui/ux
