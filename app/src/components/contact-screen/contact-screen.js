@@ -56,6 +56,7 @@ const ContactScreen = ({pageRefs}) => {
         <div className="container">
           <div className="section-header">
             Contact
+            <div className="section-header-bar" />
           </div>
           {emailError && (
             <h4>Something went wrong sending the email, please wait a moment and try again.</h4>

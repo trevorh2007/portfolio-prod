@@ -29,7 +29,7 @@
 - [X] add footer, not sure what content to add to footer, but bottom of page is somewhat lacking (good place to add linkedin/github icons)
     - [x] footer links need to open in a new tab, not in the same tab as portfolio
 - [ ] fix it so that #{page}-section scss doesn't need to be a calc of vh - px, things like about/contact are too long
-- [ ] remove section headers (or restyle them to be better looking)
+- [x] remove section headers (or restyle them to be better looking)
 - [ ] navbar links, add highlight under where you currently are on the page, example: if you click about then "about" in navbar will have highlight underneath
     - [ ] navbar "Resume" should possibly be changed to a "hover" dropdown instead of clicking as it might seem a little confusing, maybe also add animated arrow next to it for better clarification
 - [ ] navbar mobile, condense to hamburger menu maybe? adding in resume link will likely make this a must (extra credit: do hamburger menu without a library)

@@ -8,6 +8,7 @@ const AboutScreen = ({pageRefs}) => {
         <div className="container">
             <div className="section-header">
                 About
+                <div className="section-header-bar" />
             </div>
             <div className="flex-row">
                 <div className="portrait">

@@ -7,6 +7,7 @@ const ProjectsScreen = ({pageRefs}) => {
       <div className="container">
         <div className="section-header">
           Projects
+          <div className="section-header-bar" />
         </div>
       </div>
     </section>
