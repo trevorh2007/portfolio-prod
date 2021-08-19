@@ -17,6 +17,7 @@
     - [ ] submit button is pressable even with no data entered, at least make name a requirement, probably email as well?
 - [ ] contact section still isn't to my liking, maybe create floating labels?
     - [ ] condense the forms, seems to spread apart on large devices (actually like how it looks on mobile currently)
+    - [ ] submit button needs a cursor:pointer added on hover
 - [ ] project section filled out with Discord bot app and other applications
     - [ ] aquire screenshots of each project so you can cycle through them when clicked (maybe 3-5 images per project)
     - [ ] create modal that opens when clicking on a project to see more info of the project (link to project page and code)
@@ -31,5 +32,6 @@
 - [ ] fix it so that #{page}-section scss doesn't need to be a calc of vh - px, things like about/contact are too long
 - [x] remove section headers (or restyle them to be better looking)
 - [ ] navbar links, add highlight under where you currently are on the page, example: if you click about then "about" in navbar will have highlight underneath
+    - [ ] hovering over links should change the background color to indicate what you are hovering over
     - [ ] navbar "Resume" should possibly be changed to a "hover" dropdown instead of clicking as it might seem a little confusing, maybe also add animated arrow next to it for better clarification
 - [ ] navbar mobile, condense to hamburger menu maybe? adding in resume link will likely make this a must (extra credit: do hamburger menu without a library)
