@@ -1,5 +1,6 @@
 import React from 'react'
 import './landing-screen.scss'
+import {HiOutlineChevronRight} from 'react-icons/hi'
 
 const LandingScreen = ({pageRefs}) => {
   return (
@@ -17,7 +18,7 @@ const LandingScreen = ({pageRefs}) => {
           </div>
           <div className="about-me-button" onClick={() => pageRefs.current['about'].scrollIntoView({ behavior: 'smooth'})}>
             <div className="btn">
-              More about me <i className="arrow right" />
+              More about me <HiOutlineChevronRight />
             </div>
           </div>
         </div>
