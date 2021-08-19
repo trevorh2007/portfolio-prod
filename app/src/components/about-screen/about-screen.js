@@ -14,11 +14,12 @@ const AboutScreen = ({pageRefs}) => {
                     <img src={profilePic} alt="trevor howard"/>
                 </div>
                 <div className="elevator-pitch">
-                    My name is Trevor Howard and I've been focused over the last few years developing
-                    software since September of 2018. After my first full time job in the industry (a start up), I've
-                    spent the last 2 years at a relatively small healthcare focused company, creating and maintaining a wide range
-                    of applications. I am most interested in working for company that priortizes . I'm looking for
-                    opportunities that are focused on providing elegant solutions to everyday problems.
+                    Hi, my name is Trevor. After attending and completing an accelerated learning program, I've spent
+                    the last 3 years building professional experience as a software developer. I've successfully
+                    managed end-to-end projects and have generated a strong professional network for my colleagues.
+                    I've always been passionate about the way developers bring cultures together and what we can all
+                    learn from each other. I would love the opportunity to bring my abilities to any company that share
+                    the same values.
                 </div>
             </div>
         </div>
