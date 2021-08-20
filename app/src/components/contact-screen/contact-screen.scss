@@ -76,6 +76,9 @@
             }
             &:disabled {
                 opacity: 0.75;
+                &:hover {
+                    cursor: not-allowed;
+                }
             }
             &:hover {
                 cursor: pointer;

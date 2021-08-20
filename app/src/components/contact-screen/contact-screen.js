@@ -88,7 +88,7 @@ const ContactScreen = ({pageRefs}) => {
                 onChange={e => setInfo(e.target.value)}
                 placeholder="Additional Info (please include preferred way to contact you)"
               />
-              <input type="submit" value="Submit" className="btn submit-btn" disabled={!emailValid}/>
+              <input type="submit" value="Submit" className="btn submit-btn" disabled={!emailValid || !name}/>
               <div id="loading" />
             </form>
           )}
