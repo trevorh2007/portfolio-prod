@@ -43,6 +43,7 @@ const ContactScreen = ({pageRefs}) => {
           loadingIcon.remove('lds-hourglass')
         })
     } else {
+      document.getElementById('contact-name').focus()
       setNameValid(false)
       disableSubmit.disabled = false
       loadingIcon.remove('lds-hourglass')
@@ -72,6 +73,7 @@ const ContactScreen = ({pageRefs}) => {
                 <div className="name-flex-column">
                   <input 
                     type="text"
+                    id="contact-name"
                     value={name}
                     onChange={e => setName(e.target.value)}
                     placeholder="Name"

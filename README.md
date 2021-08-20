@@ -17,7 +17,7 @@
     - [x] submit button is pressable even with no data entered, at least make name a requirement, probably email as well?
 - [ ] contact section still isn't to my liking, maybe create floating labels?
     - [ ] condense the forms, seems to spread apart on large devices (actually like how it looks on mobile currently)
-    - [ ] submit button needs a cursor:pointer added on hover
+    - [x] submit button needs a cursor:pointer added on hover
 - [ ] project section filled out with Discord bot app and other applications
     - [ ] aquire screenshots of each project so you can cycle through them when clicked (maybe 3-5 images per project)
     - [ ] create modal that opens when clicking on a project to see more info of the project (link to project page and code)
