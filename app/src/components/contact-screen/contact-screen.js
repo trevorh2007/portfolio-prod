@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './contact-screen.scss'
 
-
 const ContactScreen = ({pageRefs}) => {
   const [name, setName] = useState('')
+  const [nameValid, setNameValid] = useState(true)
   const [email, setEmail] = useState('')
   const [emailValid, setEmailValid] = useState(true)
   const [info, setInfo] = useState('')
@@ -19,29 +19,34 @@ const ContactScreen = ({pageRefs}) => {
     disableSubmit.disabled = true
     loadingIcon.add('lds-hourglass')
 
-
-    const requestOptions = {
-      mode: 'cors',
-      method: 'POST',
-      headers: { 
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ name: name, email: email, info: info})
+    if (name) {
+      const requestOptions = {
+        mode: 'cors',
+        method: 'POST',
+        headers: { 
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name: name, email: email, info: info})
+      }
+      fetch('http://localhost:3080/contact', requestOptions)
+        .then(response => {
+          if (response.status === 200) {
+            setName('')
+            setEmail('')
+            setInfo('')
+            setEmailSent(true)
+          } else {
+            setEmailError(true)
+          }
+          disableSubmit.disabled = false
+          loadingIcon.remove('lds-hourglass')
+        })
+    } else {
+      setNameValid(false)
+      disableSubmit.disabled = false
+      loadingIcon.remove('lds-hourglass')
     }
-    fetch('http://localhost:3080/contact', requestOptions)
-      .then(response => {
-        if (response.status === 200) {
-          setName('')
-          setEmail('')
-          setInfo('')
-          setEmailSent(true)
-        } else {
-          setEmailError(true)
-        }
-        disableSubmit.disabled = false
-        loadingIcon.remove('lds-hourglass')
-      })
   }
 
   const handleEmail = (evt) => {
@@ -64,12 +69,17 @@ const ContactScreen = ({pageRefs}) => {
           {!emailSent && (
             <form onSubmit={onSubmit} className="contact-form-flex">
               <div className="flex-row">
-                <input 
-                  type="text"
-                  value={name}
-                  onChange={e => setName(e.target.value)}
-                  placeholder="Name"
-                />
+                <div className="name-flex-column">
+                  <input 
+                    type="text"
+                    value={name}
+                    onChange={e => setName(e.target.value)}
+                    placeholder="Name"
+                  />
+                  {!nameValid && (
+                    <div className="name-invalid">Please enter your name.</div>
+                  )}
+                </div>
                 <div className="email-flex-column">
                   <input
                     type="text"
@@ -88,7 +98,7 @@ const ContactScreen = ({pageRefs}) => {
                 onChange={e => setInfo(e.target.value)}
                 placeholder="Additional Info (please include preferred way to contact you)"
               />
-              <input type="submit" value="Submit" className="btn submit-btn" disabled={!emailValid || !name}/>
+              <input type="submit" value="Submit" className="btn submit-btn" disabled={!emailValid}/>
               <div id="loading" />
             </form>
           )}

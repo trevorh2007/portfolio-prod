@@ -14,7 +14,7 @@
     - [X] Decided to use nodemailer
     - [x] front end email form validator, something simple like regex, no need to have backend validation
     - [x] maybe make submit button unclickable while email is sending? and have it have a little loading icon while sending before confirmation message pops up
-    - [ ] submit button is pressable even with no data entered, at least make name a requirement, probably email as well?
+    - [x] submit button is pressable even with no data entered, at least make name a requirement, probably email as well?
 - [ ] contact section still isn't to my liking, maybe create floating labels?
     - [ ] condense the forms, seems to spread apart on large devices (actually like how it looks on mobile currently)
     - [ ] submit button needs a cursor:pointer added on hover

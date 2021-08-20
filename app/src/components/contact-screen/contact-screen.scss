@@ -36,11 +36,23 @@
                 border-radius: 5px;
                 padding: 10px;
                 @include sm {
-                    width: 33%;
+                    width: 60%;
                 }
                 &:focus-visible {
                     outline: none;
                     border-color: #00ffff;
+                }
+            }
+            .name-flex-column {
+                width: 100%;
+                @include sm {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .name-invalid {
+                    color: red;
+                    font-size: .8rem;
                 }
             }
             .email-flex-column {
