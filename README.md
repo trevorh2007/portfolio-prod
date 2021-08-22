@@ -37,4 +37,4 @@
         - [x] resume hover design rethought and not needed
 - [x] navbar mobile, condense to hamburger menu maybe? adding in resume link will likely make this a must (extra credit: do hamburger menu without a library)
     - [x] the "more about me >" button on mobile the arrow (>) shows over the hamburger menu when expanded, fix it
-    - [ ] the "resume" link when menu is expanded needs to be reconfigured for mobile to be a better ui/ux
+    - [x] the "resume" link when menu is expanded needs to be reconfigured for mobile to be a better ui/ux

@@ -30,6 +30,9 @@
             @include sm {
                 padding-left: 25px;
             }
+            &:hover {
+                cursor: pointer;
+            }
         }
         .nav-bar {
             display: none;
@@ -48,7 +51,6 @@
                 @include sm {
                     margin-right: 25px;
                 }
-            
             }
             .resume-container {
                 position: relative;
@@ -64,8 +66,6 @@
                     border-bottom: 1px solid white;
                     color: #fff;
                     text-align: right;
-                    // visibility: hidden;
-                    // transition: all 0.3s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
                     @include sm {
                         top: 30px;
                         right: 25px;
@@ -104,7 +104,6 @@
                 position: absolute;
                 top: 0px;
                 right: -15px;
-
                 opacity: 0;
                 z-index: 2;
                 -webkit-touch-callout: none;
@@ -134,14 +133,10 @@
                 top: 3px;
                 left: auto;
                 right: 0;
-                
                 background: #fff;
                 border-radius: 3px;
-                
                 z-index: 1;
-                
                 transform-origin: 4px 0px;
-                
                 transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                             background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                             opacity 0.55s ease,
@@ -161,21 +156,40 @@
                 height: 100vh;
                 margin: 0;
                 background:#000;
-
                 list-style-type: none;
                 -webkit-font-smoothing: antialiased;
                 /* to stop flickering of text in safari */
-                
                 transform-origin: 0% 0%;
                 transform: translate(100%, 0);
-                
                 transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-
                 .page-link-padding {
                     height: 100%;
                     padding: 50px 10px;
+                    .resume-dropdown {
+                        position: absolute;
+                        right: 0;
+                        ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                        }
+                        li {
+                            padding: 12px 5px;
+                            text-align: right;
+                        }
+                    }
+                    .resume-mobile-flex {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-end;
+                        svg {
+                            font-size: 24px;
+                            padding: 5px 5px 0 0;
+                            color: #00ffff;
+                        }
+                    }
                 }
-
                 .page-link {
                     text-align: right;
                     transition: color 0.3s ease;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './nav-bar.scss'
+import {HiChevronDown} from 'react-icons/hi'
 
 import resumePDF from '../../assets/pdf/Trevor Howard - Resume.pdf'
 import resumeDOCX from '../../assets/docx/Trevor Howard - Resume.docx'
@@ -30,7 +31,7 @@ function NavBar({ pageRefs }){
     return (
         <div className="fixed-nav">
             <nav>  
-                <div className="header">
+                <div className="header" onClick={() => scrollIntoView('home')}>
                     <div>Trevor Howard</div>
                     <div>Software Developer</div>
                 </div>
@@ -62,7 +63,10 @@ function NavBar({ pageRefs }){
                             <div className="page-link" onClick={() => scrollIntoViewMobile('about')}>About</div>
                             <div className="page-link" onClick={() => scrollIntoViewMobile('projects')}>Projects</div>
                             <div className="page-link" onClick={() => scrollIntoViewMobile('contact')}>Contact</div>
-                            <div className="page-link" onClick={() => setResumeDropdownOpen(!resumeDropdownOpen)}>Resume</div>
+                            <div className="resume-mobile-flex">
+                                {resumeDropdownOpen && (<HiChevronDown />)}
+                                <div className="page-link" onClick={() => setResumeDropdownOpen(!resumeDropdownOpen)}>Resume</div>
+                            </div>
                             <div className="resume-container">
                                 {resumeDropdownOpen && (
                                     <div className="resume-dropdown" ref={resumeDropdownRef}>
