@@ -7,7 +7,7 @@ import resumeDOCX from '../../assets/docx/Trevor Howard - Resume.docx'
 
 function NavBar({ pageRefs }){
     const [resumeDropdownOpen, setResumeDropdownOpen] = useState(false)
-    const resumeDropdownRef = useRef(null)
+    const resumeDropdownRef = useRef()
 
     function scrollIntoView(type) {
         pageRefs.current[type].scrollIntoView({ behavior: "smooth" });
@@ -18,19 +18,21 @@ function NavBar({ pageRefs }){
         document.getElementById('mobile-checkbox').checked = false
     }
 
-    function handleClickOutside(event) {
-        if (resumeDropdownRef.current && !resumeDropdownRef.current.contains(event.target)) {
-            setResumeDropdownOpen(false)
-        }
-    }
-
     useEffect(() => {
-        window.addEventListener('mousedown', handleClickOutside)
-    }, [])
+        const handleClickOutside = (event) => {
+            if (resumeDropdownRef.current && !resumeDropdownRef.current.contains(event.target)) {
+                setResumeDropdownOpen(false)
+            }
+        }
+        document.addEventListener('mousedown', handleClickOutside)
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside)
+        }
+    }, [resumeDropdownOpen, resumeDropdownRef])
     
     return (
         <div className="fixed-nav">
-            <nav>  
+            <nav ref={resumeDropdownRef}>  
                 <div className="header" onClick={() => scrollIntoView('home')}>
                     <div>Trevor Howard</div>
                     <div>Software Developer</div>
@@ -41,16 +43,16 @@ function NavBar({ pageRefs }){
                     <div className="page-link" onClick={() => scrollIntoView('projects')}>Projects</div>
                     <div className="page-link" onClick={() => scrollIntoView('contact')}>Contact</div>
                     <div className="page-link" onClick={() => setResumeDropdownOpen(!resumeDropdownOpen)}>Resume</div>
-                    <div className="resume-container">
-                        {resumeDropdownOpen && (
-                            <div className="resume-dropdown" ref={resumeDropdownRef}>
+                    {resumeDropdownOpen && (
+                        <div className="resume-container">
+                            <div className="resume-dropdown">
                                 <ul>
                                     <li onClick={() => window.open(resumePDF, "_blank")}>PDF</li>
-                                    <li onClick={() => window.open(resumeDOCX, "_blank", 'noopener,noreferrer')}>DOCX</li>
+                                    <li onClick={() => window.open(resumeDOCX, "_blank", 'noopener,noreferrer')} >DOCX</li>
                                 </ul>
                             </div>
-                        )}
-                    </div>
+                        </div>
+                    )}
                 </div>
                 <div className="mobile-nav-toggle">
                     <input id="mobile-checkbox" type="checkbox" />
@@ -67,16 +69,16 @@ function NavBar({ pageRefs }){
                                 {resumeDropdownOpen && (<HiChevronDown />)}
                                 <div className="page-link" onClick={() => setResumeDropdownOpen(!resumeDropdownOpen)}>Resume</div>
                             </div>
-                            <div className="resume-container">
-                                {resumeDropdownOpen && (
-                                    <div className="resume-dropdown" ref={resumeDropdownRef}>
+                            {resumeDropdownOpen && (
+                                <div className="resume-container">
+                                    <div className="resume-dropdown">
                                         <ul>
                                             <li onClick={() => window.open(resumePDF, "_blank")}>PDF</li>
                                             <li onClick={() => window.open(resumeDOCX, "_blank", 'noopener,noreferrer')}>DOCX</li>
                                         </ul>
                                     </div>
-                                )}
-                            </div>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
