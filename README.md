@@ -22,6 +22,7 @@
     - [ ] aquire screenshots of each project so you can cycle through them when clicked (maybe 3-5 images per project)
     - [ ] create modal that opens when clicking on a project to see more info of the project (link to project page and code)
     - [ ] carousel to go through images
+        - [ ] create gifs of the projects you showcase, less work and no need for carousel
 - [ ] about section to add a link to contact page
 - [x] about section re-word elevator pitch
     - [ ] update picture, take a more professional picture
