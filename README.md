@@ -19,9 +19,9 @@
     - [ ] condense the forms, seems to spread apart on large devices (actually like how it looks on mobile currently)
     - [x] submit button needs a cursor:pointer added on hover
 - [ ] project section filled out with Discord bot app and other applications
-    - [ ] aquire screenshots of each project so you can cycle through them when clicked (maybe 3-5 images per project)
+    - ~~[ ] aquire screenshots of each project so you can cycle through them when clicked (maybe 3-5 images per project)~~
     - [ ] create modal that opens when clicking on a project to see more info of the project (link to project page and code)
-    - [ ] carousel to go through images
+    - ~~[ ] carousel to go through images~~
         - [ ] create gifs of the projects you showcase, less work and no need for carousel
 - [ ] about section to add a link to contact page
 - [x] about section re-word elevator pitch
