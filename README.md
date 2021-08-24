@@ -23,9 +23,10 @@
     - [ ] create modal that opens when clicking on a project to see more info of the project (link to project page and code)
     - ~~[ ] carousel to go through images~~
         - [ ] create gifs of the projects you showcase, less work and no need for carousel
-- [ ] about section to add a link to contact page
-- [x] about section re-word elevator pitch
-    - [ ] update picture, take a more professional picture
+- ~~[ ] about section to add a link to contact page~~
+- ~~[x] about section re-word elevator pitch~~
+    - ~~[ ] update picture, take a more professional picture~~
+- [ ] remove about section and focus on portfolio highlighting projects
 - [X] add resume to be viewed in browser as well as be able to download in docx/pdf
     - [X] above is technically just pdf link, add it so that the link has a drop down and 2 options (pdf/docx) and both clickable/viewable/downloadable in browser
 - [X] add footer, not sure what content to add to footer, but bottom of page is somewhat lacking (good place to add linkedin/github icons)
