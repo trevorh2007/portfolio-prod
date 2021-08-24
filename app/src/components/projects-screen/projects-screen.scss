@@ -22,7 +22,6 @@
                 align-items: center;
                 flex-direction: column;
                 height: 200px;
-                background: rgba(255, 255, 255, 0.4);
                 margin: 10px;
 
                 @include sm {
@@ -35,6 +34,25 @@
                 }
                 &:hover {
                     cursor: pointer;
+                }
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    &:hover {
+                        opacity: 75%;
+                    }
+                }
+                .hover-hidden {
+                    display: none;
+                }
+                .hover-show {
+                    display: block;
+                    position: absolute;
+                    color: #00ffff;
+                    .hover-title {
+                        font-size: 24px;
+                    }
                 }
             }
         }

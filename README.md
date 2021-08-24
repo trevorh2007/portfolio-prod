@@ -23,9 +23,12 @@
     - [x] submit button needs a cursor:pointer added on hover
 - [ ] project section filled out with Discord bot app and other applications
     - ~~[ ] aquire screenshots of each project so you can cycle through them when clicked (maybe 3-5 images per project)~~
-    - [ ] create modal that opens when clicking on a project to see more info of the project (link to project page and code)
+        - [ ] aquire a single screenshot of each project for the card
+    - [x] create modal that opens when clicking on a project to see more info of the project (link to project page and code)
+        - [ ] modal styling (gif going up top and short description middle with 2 buttons (site link and source code link))
     - ~~[ ] carousel to go through images~~
         - [ ] create gifs of the projects you showcase, less work and no need for carousel
+    - [ ] break out the code currently in project-screen.js for "cards" so that cards can be it's own component, lots of re-used code here
 - ~~[ ] about section to add a link to contact page~~
 - ~~[x] about section re-word elevator pitch~~
     - ~~[ ] update picture, take a more professional picture~~
