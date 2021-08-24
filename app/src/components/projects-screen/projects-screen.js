@@ -37,7 +37,20 @@ const ProjectsScreen = ({pageRefs}) => {
               </div>
             </div>
             <ProjectModal ref={modal} true>
-              Project Modal 1
+              <div className="project1-gif" />
+              <div className="project-description">
+                An automated discord bot that takes commands and does other stuff too!
+              </div>
+              <div className="project-btns">
+                <div className="project-link-btn btn" onClick={() => window.open('https://www.saintshall.com', '_blank')}>View Site</div>
+                <div className="project-source-btn btn" onClick={() => window.open('https://replit.com/@RelliKBooN/SaintsHallDiscordBot', '_blank')}>View Source</div>
+                <div className="discord-btn btn" onClick={() => window.open('https://discord.gg/UuAtKjcgk5', '_blank')}>
+                  Play on Discord!
+                  <span>
+                    (requires discord login)
+                  </span>
+                </div>
+              </div>
             </ProjectModal>
             <div className="card" onClick={() => modal2.current.open()}>
               Project Image 2
