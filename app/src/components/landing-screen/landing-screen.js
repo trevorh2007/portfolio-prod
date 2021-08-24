@@ -16,9 +16,9 @@ const LandingScreen = ({pageRefs}) => {
             <br />
             and maintaining elegant applications
           </div>
-          <div className="about-me-button" onClick={() => pageRefs.current['about'].scrollIntoView({ behavior: 'smooth'})}>
+          <div className="about-me-button" onClick={() => pageRefs.current['projects'].scrollIntoView({ behavior: 'smooth'})}>
             <div className="btn">
-              More about me <HiOutlineChevronRight />
+              View Projects <HiOutlineChevronRight />
             </div>
           </div>
         </div>

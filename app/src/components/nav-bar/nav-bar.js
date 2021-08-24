@@ -38,8 +38,7 @@ function NavBar({ pageRefs }){
                     <div>Software Developer</div>
                 </div>
                 <div className="nav-bar">
-                    <div className="page-link" onClick={() => scrollIntoView('home')}>Home</div>  
-                    <div className="page-link" onClick={() => scrollIntoView('about')}>About</div>
+                    <div className="page-link" onClick={() => scrollIntoView('home')}>Home</div>
                     <div className="page-link" onClick={() => scrollIntoView('projects')}>Projects</div>
                     <div className="page-link" onClick={() => scrollIntoView('contact')}>Contact</div>
                     <div className="page-link" onClick={() => setResumeDropdownOpen(!resumeDropdownOpen)}>Resume</div>
@@ -61,8 +60,7 @@ function NavBar({ pageRefs }){
                     <span />
                     <div id="mobile-menu">
                         <div className="page-link-padding">
-                            <div className="page-link" onClick={() => scrollIntoViewMobile('home')}>Home</div>  
-                            <div className="page-link" onClick={() => scrollIntoViewMobile('about')}>About</div>
+                            <div className="page-link" onClick={() => scrollIntoViewMobile('home')}>Home</div>
                             <div className="page-link" onClick={() => scrollIntoViewMobile('projects')}>Projects</div>
                             <div className="page-link" onClick={() => scrollIntoViewMobile('contact')}>Contact</div>
                             <div className="resume-mobile-flex">
