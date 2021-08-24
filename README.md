@@ -26,12 +26,12 @@
 - ~~[ ] about section to add a link to contact page~~
 - ~~[x] about section re-word elevator pitch~~
     - ~~[ ] update picture, take a more professional picture~~
-- [ ] remove about section and focus on portfolio highlighting projects
+- [x] remove about section and focus on portfolio highlighting projects
 - [X] add resume to be viewed in browser as well as be able to download in docx/pdf
     - [X] above is technically just pdf link, add it so that the link has a drop down and 2 options (pdf/docx) and both clickable/viewable/downloadable in browser
 - [X] add footer, not sure what content to add to footer, but bottom of page is somewhat lacking (good place to add linkedin/github icons)
     - [x] footer links need to open in a new tab, not in the same tab as portfolio
-- [ ] fix it so that #{page}-section scss doesn't need to be a calc of vh - px, things like about/contact are too long
+- [x] fix it so that #{page}-section scss doesn't need to be a calc of vh - px, things like about/contact are too long
 - [x] remove section headers (or restyle them to be better looking)
 - [ ] navbar links, add highlight under where you currently are on the page, example: if you click about then "about" in navbar will have highlight underneath
     - [x] hovering over links should change the background color to indicate what you are hovering over
