@@ -4,6 +4,9 @@
 - Using react for frontend
 - Using postgresql for database
 
+- Personal Challenge
+    - Minimal use of libraries (e.g. Create own responsive navbar instead of relying on react-bootstrap library)
+
 - Use of react hooks
 - Unit testing
 - Snapshot testing
