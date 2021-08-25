@@ -1,16 +1,18 @@
 const nodemailer = require('nodemailer')
+const mg = require('nodemailer-mailgun-transport')
 
 async function main(name, email, body) {
-    let transporter = nodemailer.createTransport({
-        service: "gmail",
+    const auth = {
         auth: {
-            user: process.env.CONTACT_EMAIL,
-            pass: process.env.CONTACT_PASS
+            api_key: process.env.MAILGUN_API_KEY,
+            domain: process.env.MAILGUN_DOMAIN
         }
-    })
+    }
+
+    const nodemailerMailgun = nodemailer.createTransport(mg(auth))
 
     var mailOptions = {
-        from: 'runelite.throwaway2@gmail.com',
+        from: 'noreply@trevorhoward.me',
         to: 'trevorhoward2@gmail.com',
         subject: 'Contact from portfolio',
         text: `
@@ -21,7 +23,7 @@ async function main(name, email, body) {
     }
 
     return new Promise((resolve, reject) => {
-        transporter.sendMail(mailOptions, (err, info) => {
+        nodemailerMailgun.sendMail(mailOptions, (err, info) => {
             if (err) {
                 console.log(err)
                 reject('Fail')

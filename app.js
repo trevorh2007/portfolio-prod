@@ -7,7 +7,6 @@ var indexRouter = require('./routes/index')
 
 var app = express()
 
-const PORT = process.env.PORT || 5000;
 const mailer = require('./email')
 
 app.use(cors())
