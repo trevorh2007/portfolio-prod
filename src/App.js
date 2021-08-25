@@ -9,10 +9,6 @@ import Footer from './components/footer/footer'
 const App = () => {
   const pageRefs = useRef({})
 
-  useEffect(() => {
-    document.title = "Trevor Howard"
-  }, [])
-
   return(
     <div className="app">
       <NavBar pageRefs={pageRefs}/>
