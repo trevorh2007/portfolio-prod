@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './contact-screen.scss'
 
+const production = process.env.NODE_ENV === 'production'
+
 const ContactScreen = ({pageRefs}) => {
   const [name, setName] = useState('')
   const [nameValid, setNameValid] = useState(true)
@@ -29,7 +31,7 @@ const ContactScreen = ({pageRefs}) => {
         },
         body: JSON.stringify({ name: name, email: email, info: info})
       }
-      fetch(`http://localhost:${process.env.PORT}/contact` || 'http://localhost:3000/contact', requestOptions)
+      fetch(production ? '/contact' : 'http://localhost:3000/contact', requestOptions)
         .then(response => {
           if (response.status === 200) {
             setName('')
