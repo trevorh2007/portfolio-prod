@@ -29,7 +29,7 @@ app.use(function(err, req, res, next) {
 })
 
 app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'))
+  res.status(200).sendFile(path.join(__dirname, 'build', 'index.html'))
 })
 
 app.post('/contact', (req, res) => {
