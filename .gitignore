@@ -117,3 +117,7 @@ dist
 
 # package-lock
 package-lock.json
+
+#build
+
+build/
