@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0d0be021.chunk.css",
+    "main.js": "/static/js/main.9f866fb4.chunk.js",
+    "main.js.map": "/static/js/main.9f866fb4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fc256c6b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fc256c6b.js.map",
+    "static/js/2.c8b5731c.chunk.js": "/static/js/2.c8b5731c.chunk.js",
+    "static/js/2.c8b5731c.chunk.js.map": "/static/js/2.c8b5731c.chunk.js.map",
+    "static/js/3.f07228d8.chunk.js": "/static/js/3.f07228d8.chunk.js",
+    "static/js/3.f07228d8.chunk.js.map": "/static/js/3.f07228d8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.0d0be021.chunk.css.map": "/static/css/main.0d0be021.chunk.css.map",
+    "static/js/2.c8b5731c.chunk.js.LICENSE.txt": "/static/js/2.c8b5731c.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/home-page-background.d4f3997d.jpg",
+    "static/media/DiscordProject.a29f9f10.png": "/static/media/DiscordProject.a29f9f10.png",
+    "static/media/Trevor Howard - Resume.9895f735.docx": "/static/media/Trevor Howard - Resume.9895f735.docx",
+    "static/media/Trevor Howard - Resume.ddc1870b.pdf": "/static/media/Trevor Howard - Resume.ddc1870b.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc256c6b.js",
+    "static/js/2.c8b5731c.chunk.js",
+    "static/css/main.0d0be021.chunk.css",
+    "static/js/main.9f866fb4.chunk.js"
+  ]
+}

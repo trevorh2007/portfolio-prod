@@ -29,7 +29,7 @@ const ContactScreen = ({pageRefs}) => {
         },
         body: JSON.stringify({ name: name, email: email, info: info})
       }
-      fetch('http://localhost:3080/contact', requestOptions)
+      fetch('http://localhost:3000/contact', requestOptions)
         .then(response => {
           if (response.status === 200) {
             setName('')
