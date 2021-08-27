@@ -29,6 +29,7 @@
     - ~~[ ] carousel to go through images~~
         - [ ] create gifs of the projects you showcase, less work and no need for carousel
     - [ ] break out the code currently in project-screen.js for "cards" so that cards can be it's own component, lots of re-used code here
+    - [ ] highlight 1 big project and then show 2 smaller projects
 - ~~[ ] about section to add a link to contact page~~
 - ~~[x] about section re-word elevator pitch~~
     - ~~[ ] update picture, take a more professional picture~~
