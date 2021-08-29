@@ -9,7 +9,6 @@
 
 - Use of react hooks
 - Unit testing
-- Snapshot testing
 
 # TODO
 

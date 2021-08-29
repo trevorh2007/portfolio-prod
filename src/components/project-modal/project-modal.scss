@@ -71,10 +71,17 @@
       }
       .project-btns {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         padding: 20px 0;
+        @include sm {
+          flex-direction: row;
+        }
+        .btn {
+          width: 50%;
+          margin: 10px 0;
+        }
         .project-link-btn {
           padding: 15px 40px;
           background: #007bff;
