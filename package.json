@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "build": "react-scripts --max_old_space_size=4096 build",
+    "build": "react-scripts build",
     "dev": "react-scripts start"
   },
   "eslintConfig": {
