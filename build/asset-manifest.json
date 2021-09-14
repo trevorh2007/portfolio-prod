@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.93fbb08d.chunk.css",
+    "main.js": "/static/js/main.d759609d.chunk.js",
+    "main.js.map": "/static/js/main.d759609d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.00e153ad.js",
+    "runtime-main.js.map": "/static/js/runtime-main.00e153ad.js.map",
+    "static/js/2.521eeb04.chunk.js": "/static/js/2.521eeb04.chunk.js",
+    "static/js/2.521eeb04.chunk.js.map": "/static/js/2.521eeb04.chunk.js.map",
+    "static/js/3.d5d7eabd.chunk.js": "/static/js/3.d5d7eabd.chunk.js",
+    "static/js/3.d5d7eabd.chunk.js.map": "/static/js/3.d5d7eabd.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.93fbb08d.chunk.css.map": "/static/css/main.93fbb08d.chunk.css.map",
+    "static/js/2.521eeb04.chunk.js.LICENSE.txt": "/static/js/2.521eeb04.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/home-page-background.d4f3997d.jpg",
+    "static/media/DiscordProject.a29f9f10.png": "/static/media/DiscordProject.a29f9f10.png",
+    "static/media/Trevor Howard - Resume.9895f735.docx": "/static/media/Trevor Howard - Resume.9895f735.docx",
+    "static/media/Trevor Howard - Resume.ddc1870b.pdf": "/static/media/Trevor Howard - Resume.ddc1870b.pdf",
+    "static/media/project-modal.scss": "/static/media/discord-bot1.19fec038.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00e153ad.js",
+    "static/js/2.521eeb04.chunk.js",
+    "static/css/main.93fbb08d.chunk.css",
+    "static/js/main.d759609d.chunk.js"
+  ]
+}
