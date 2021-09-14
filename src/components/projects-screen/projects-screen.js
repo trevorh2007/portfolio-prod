@@ -29,7 +29,7 @@ const ProjectsScreen = ({pageRefs}) => {
                  onMouseEnter={() => setmodalHover1('hover-show')}
                  onMouseLeave={() => setmodalHover1('hover-hidden')}
             >
-              <img src={projectImage1} />
+              <img src={projectImage1} alt="A screenshot of project one"/>
               <div className={modalHover1}>
                 <div className="hover-title">
                   Discord Bot
@@ -39,7 +39,7 @@ const ProjectsScreen = ({pageRefs}) => {
             <ProjectModal ref={modal} true>
               <div className="project1-gif" />
               <div className="project-description">
-                An automated discord bot that takes commands and does other stuff too!
+                A commissioned Discord bot with fun commands for Saints Hall clan, playing Old School Runescape
               </div>
               <div className="project-btns">
                 <div className="project-link-btn btn" onClick={() => window.open('https://www.saintshall.com', '_blank')}>View Site</div>

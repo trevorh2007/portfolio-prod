@@ -28,12 +28,13 @@ export function ProjectModal({ children, fade = false, defaultOpened = false }, 
 
   return createPortal(
     isOpen ? (
-      <div className={`modal ${fade ? 'modal-fade' : ''}`}>
-        <div className="modal-overlay" onClick={close} />
-        <span role="button" className="modal-close" aria-label="close" onClick={close}>
-          <RiCloseFill />
-        </span>
-        <div className="modal-body">{children}</div>
+      <div className={`modal-wrap ${fade ? 'modal-fade' : ''}`}>
+        <div className="modal">
+          <span role="button" className="modal-close" aria-label="close" onClick={close}>
+            <RiCloseFill />
+          </span>
+          <div className="modal-body">{children}</div>
+        </div>
       </div>
     ) : null,
     modalElement
