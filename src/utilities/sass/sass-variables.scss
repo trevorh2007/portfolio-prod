@@ -10,6 +10,9 @@ $screen-lg-min: 992px;
 // Large tablets and desktops
 $screen-xl-min: 1200px;
 
+// Short devices (moto g4, galaxy s5)
+$screen-short-min: 650px;
+
 // Small devices
 @mixin sm {
     @media (min-width: #{$screen-sm-min}) {
@@ -43,6 +46,12 @@ $screen-xl-min: 1200px;
     @media (min-width: $screen+'px') {
         @content;
     }
+ }
+
+ @mixin short {
+	 @media (min-height: #{$screen-short-min}) {
+		 @content;
+	 }
  }
 
  //split button mixin
