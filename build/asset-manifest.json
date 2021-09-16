@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.5c545668.chunk.css",
-    "main.js": "/static/js/main.522801f6.chunk.js",
-    "main.js.map": "/static/js/main.522801f6.chunk.js.map",
+    "main.js": "/static/js/main.ed8c9b80.chunk.js",
+    "main.js.map": "/static/js/main.ed8c9b80.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5edeade5.js",
     "runtime-main.js.map": "/static/js/runtime-main.5edeade5.js.map",
     "static/js/2.2bf265f5.chunk.js": "/static/js/2.2bf265f5.chunk.js",
@@ -19,12 +19,12 @@
     "static/media/more-than-tired-logo.5ded002d.svg": "/static/media/more-than-tired-logo.5ded002d.svg",
     "static/media/mtt1.5046b53c.gif": "/static/media/mtt1.5046b53c.gif",
     "static/media/narc-link1.be34cbb8.gif": "/static/media/narc-link1.be34cbb8.gif",
-    "static/media/xyrem1.9a0bc00d.gif": "/static/media/xyrem1.9a0bc00d.gif"
+    "static/media/xyrem1.4797699d.gif": "/static/media/xyrem1.4797699d.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.5edeade5.js",
     "static/js/2.2bf265f5.chunk.js",
     "static/css/main.5c545668.chunk.css",
-    "static/js/main.522801f6.chunk.js"
+    "static/js/main.ed8c9b80.chunk.js"
   ]
 }
