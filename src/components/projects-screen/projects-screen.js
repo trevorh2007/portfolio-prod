@@ -4,6 +4,12 @@ import './projects-screen.scss'
 import ProjectModal from '../project-modal/project-modal'
 import moreThanTiredImage from '../../assets/images/more-than-tired-logo.svg'
 import narcolepsyLinkLogo from '../../assets/images/narc-temp-logo-lg.png'
+import xyremLogo from '../../assets/images/xyrem-sodium-oxybate-logo.png'
+
+import discordGif from '../../assets/gifs/discord-bot1.gif'
+import mttGif from '../../assets/gifs/mtt1.gif'
+import narcolepsyGif from '../../assets/gifs/narc-link1.gif'
+import xyremGif from '../../assets/gifs/xyrem1.gif'
 import { RiDiscordFill } from 'react-icons/ri'
 
 const ProjectsScreen = ({pageRefs}) => {
@@ -42,8 +48,8 @@ const ProjectsScreen = ({pageRefs}) => {
                 </div>
               </div>
             </div>
-            <ProjectModal ref={modal} true>
-              <div className="project-gifs" />
+            <ProjectModal ref={modal} fade>
+              <img src={discordGif} className="project-gif" alt="Discord bot"/>
               <div className="project-description">
                 A commissioned Discord bot with fun and managerial commands for Saints Hall clan, playing Old School Runescape.
                 <ul>
@@ -80,7 +86,18 @@ const ProjectsScreen = ({pageRefs}) => {
               </div>
             </div>
             <ProjectModal ref={modal2} fade>
-              Project Modal 2
+            <img src={mttGif} className="project-gif" alt="More than tired"/>
+              <div className="project-description">
+                A healthcare based website built for patients that have questions about narcolepsy and narcolepsy with cataplexy. Find a sleep specialist, with google maps API integration, will be able to find a specialist near anyone.
+                <ul>
+                  <li>postgreSQL for storage needs</li>
+                  <li>React front-end</li>
+                  <li>Node back-end</li>
+                </ul>
+              </div>
+              <div className="project-btns">
+                <div className="project-link-btn btn" onClick={() => window.open('https://www.morethantired.com', '_blank')}>View Site</div>
+              </div>
             </ProjectModal>
             <div className="card"
               onClick={() => {
@@ -98,18 +115,51 @@ const ProjectsScreen = ({pageRefs}) => {
                 </div>
               </div>
             </div>
-            <ProjectModal ref={modal3} true>
-              Project Modal 3
+            <ProjectModal ref={modal3} fade>
+            <img src={narcolepsyGif} className="project-gif" alt="Narcolepsy Link"/>
+              <div className="project-description">
+                A website built for healthcare professionals to stay informed about narcolepsy. ESS/SNS screeners to help determine if their patients may have narcolepsy with or without cataplexy.
+                <ul>
+                  <li>MySQL for storage needs</li>
+                  <li>React front-end</li>
+                  <li>Node back-end</li>
+                </ul>
+              </div>
+              <div className="project-btns">
+                <div className="project-link-btn btn" onClick={() => window.open('https://www.narcolepsylink.com', '_blank')}>View Site</div>
+              </div>
             </ProjectModal>
             <div className="card" onClick={() => {
               modal4.current.open()
               document.getElementsByClassName('fixed-nav')[0].className += ' hidden-nav'
               document.body.className += 'modal-open'
-            }}>
-              Project Image 4
+            }}
+              onMouseEnter={() => setmodalHover4('hover-show')}
+              onMouseLeave={() => setmodalHover4('hover-hidden')}>
+            <img src={xyremLogo} alt="Narcolepsy Link"/>
+              <div className={modalHover4}>
+                <div className="hover-title">
+                  Xyrem
+                </div>
+              </div>
             </div>
             <ProjectModal ref={modal4} fade>
-              Project Modal 4
+            <img src={xyremGif} className="project-gif" alt="Xyrem"/>
+              <div className="project-description">
+                A healthcare based website for the pharmaceutical drug Xyrem. Information for obtaining, taking, and any questions patients or professionals may have about the drug Xyrem.
+                <ul>
+                  <li>MySQL for storage needs</li>
+                  <li>MODX CMS used for all front-end content</li>
+                </ul>
+              </div>
+              <div className="project-btns">
+                <div className="project-link-btn btn" onClick={() => window.open('https://www.xyrem.com', '_blank')}>
+                  View Site 
+                  <span>
+                    (disable adblock to view site)
+                  </span>
+                </div>
+              </div>
             </ProjectModal>
           </div>
         </div>

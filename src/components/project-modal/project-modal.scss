@@ -76,10 +76,9 @@
         @include short {
           justify-content: center;
         }
-        .project-gifs {
+        .project-gif {
           min-height: 290px;
           width: 100%;
-          background: url('../../assets/gifs/discord-bot1.gif') no-repeat center/contain;
           @include sm {
             min-height: 350px;
           }
@@ -120,6 +119,8 @@
             }
           }
           .project-link-btn {
+            display: flex;
+            flex-direction: column;
             padding: .5em;
             background: #007bff;
             margin: 0 5px;
@@ -131,6 +132,9 @@
             }
             @include sm {
               padding: 15px 35px;
+            }
+            span {
+              font-size: 0.75rem;
             }
           }
           .project-source-btn {
@@ -184,11 +188,13 @@
         }
       }
     }
-    .modal-fade {
-      animation: fade-in 1s 1 linear;
-      animation-fill-mode: forwards;
-      opacity: 0;
-    }
+
+  }
+
+  .modal-fade {
+    animation: fade-in 1s 1 linear;
+    animation-fill-mode: forwards;
+    opacity: .5;
   }
 
   @keyframes fade-in {
