@@ -41,7 +41,12 @@ const ProjectsScreen = ({pageRefs}) => {
             <ProjectModal ref={modal} true>
               <div className="project-gifs" />
               <div className="project-description">
-                A commissioned Discord bot with fun commands for Saints Hall clan, playing Old School Runescape
+                A commissioned Discord bot with fun and managerial commands for Saints Hall clan, playing Old School Runescape.
+                <ul>
+                  <li>MongoDB for storage needs</li>
+                  <li>Express front-end</li>
+                  <li>Node back-end</li>
+                </ul>
               </div>
               <div className="project-btns">
                 <div className="project-link-btn btn" onClick={() => window.open('https://www.saintshall.com', '_blank')}>View Site</div>

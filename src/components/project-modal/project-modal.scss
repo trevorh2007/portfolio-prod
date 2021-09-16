@@ -7,7 +7,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.85);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -89,20 +89,25 @@
         }
         .project-description {
           display: flex;
-          justify-content: center;
-          align-items: center;
+          flex-direction: column;
           padding: 10px 20px;
           font-size: 14px;
+          li {
+            padding: 3px 0;
+          }
           @include sm {
             font-size: 18px;
           }
         }
         .project-btns {
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           justify-content: space-around;
           align-items: center;
-          padding: 10px 0 0 0;
+          @include short {
+            padding: 10px 0 0 0;
+            flex-direction: column;
+          }
           @include md {
             padding: 20px 0;
             flex-direction: row;
@@ -117,8 +122,12 @@
           .project-link-btn {
             padding: .5em;
             background: #007bff;
+            margin: 0 5px;
             &:hover {
               cursor: pointer;
+            }
+            @include short {
+              margin: 10px 0;
             }
             @include sm {
               padding: 15px 35px;
@@ -127,8 +136,12 @@
           .project-source-btn {
             padding: .5em;
             background: #007bff;
+            margin: 0 5px;
             &:hover {
               cursor: pointer;
+            }
+            @include short {
+              margin: 10px 0;
             }
             @include sm {
               padding: 15px 35px;
@@ -139,8 +152,12 @@
             flex-direction: column;
             padding: .5em;
             background: #007bff;
+            margin: 0 5px;
             &:hover {
               cursor: pointer;
+            }
+            @include short {
+              margin: 10px 0;
             }
             span {
               font-size: 0.75rem;
