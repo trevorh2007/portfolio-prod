@@ -4,7 +4,9 @@
     position: relative;
     background: #000;
     padding: 35px 0 20px 0;
+    margin-bottom: 50px;
     @include sm {
+        margin-bottom: 0;
         padding: 70px 0 50px 0;
     }
     .icon-wrap {

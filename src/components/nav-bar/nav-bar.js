@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import './nav-bar.scss'
-import {HiChevronDown} from 'react-icons/hi'
+import { HiChevronDown, HiOutlinePrinter } from 'react-icons/hi'
+import { IoHomeOutline, IoHammerOutline, IoMailOutline } from 'react-icons/io5'
 
 import resumePDF from '../../assets/pdf/Trevor Howard - Resume.pdf'
 import resumeDOCX from '../../assets/docx/Trevor Howard - Resume.docx'
@@ -60,12 +61,12 @@ function NavBar({ pageRefs }){
                     <span />
                     <div id="mobile-menu">
                         <div className="page-link-padding">
-                            <div className="page-link" onClick={() => scrollIntoViewMobile('home')}>Home</div>
-                            <div className="page-link" onClick={() => scrollIntoViewMobile('projects')}>Projects</div>
-                            <div className="page-link" onClick={() => scrollIntoViewMobile('contact')}>Contact</div>
+                            <div className="page-link" onClick={() => scrollIntoViewMobile('home')}><IoHomeOutline />Home</div>
+                            <div className="page-link" onClick={() => scrollIntoViewMobile('projects')}><IoHammerOutline />Projects</div>
+                            <div className="page-link" onClick={() => scrollIntoViewMobile('contact')}><IoMailOutline />Contact</div>
                             <div className="resume-mobile-flex">
                                 {resumeDropdownOpen && (<HiChevronDown />)}
-                                <div className="page-link" onClick={() => setResumeDropdownOpen(!resumeDropdownOpen)}>Resume</div>
+                                <div className="page-link" onClick={() => setResumeDropdownOpen(!resumeDropdownOpen)}><HiOutlinePrinter />Resume</div>
                             </div>
                             {resumeDropdownOpen && (
                                 <div className="resume-container">
