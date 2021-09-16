@@ -8,7 +8,11 @@ const modalElement = document.getElementById('modal-root')
 export function ProjectModal({ children, fade = false, defaultOpened = false }, ref) {
   const [isOpen, setIsOpen] = useState(defaultOpened)
 
-  const close = useCallback(() => setIsOpen(false), [])
+  const close = useCallback(() => {
+    setIsOpen(false)
+    var unhideNav = document.getElementsByClassName('fixed-nav')
+    unhideNav[0].classList.remove('hidden-nav')
+  }, [])
 
   useImperativeHandle(ref, () => ({
     open: () => setIsOpen(true),

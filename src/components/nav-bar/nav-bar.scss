@@ -31,7 +31,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding-left: 10px;
+            padding-left: 20px;
             white-space: nowrap;
             @include sm {
                 padding-left: 25px;
@@ -213,4 +213,7 @@
             }
         }
     }
+}
+.hidden-nav {
+    display: none;
 }

@@ -27,7 +27,10 @@ const ProjectsScreen = ({pageRefs}) => {
         <div className="project-gallery">
           <div className="project-cards">
             <div className="card"
-                 onClick={() => modal.current.open()}
+                 onClick={() => {
+                   modal.current.open()
+                   document.getElementsByClassName('fixed-nav')[0].className += ' hidden-nav'
+                }}
                  onMouseEnter={() => setmodalHover1('hover-show')}
                  onMouseLeave={() => setmodalHover1('hover-hidden')}
             >
@@ -60,7 +63,10 @@ const ProjectsScreen = ({pageRefs}) => {
               </div>
             </ProjectModal>
             <div className="card"
-              onClick={() => modal2.current.open()}
+              onClick={() => {
+                modal2.current.open()
+                document.getElementsByClassName('fixed-nav')[0].className += ' hidden-nav'
+              }}
               onMouseEnter={() => setmodalHover2('hover-show')}
               onMouseLeave={() => setmodalHover2('hover-hidden')}
             >
@@ -75,7 +81,10 @@ const ProjectsScreen = ({pageRefs}) => {
               Project Modal 2
             </ProjectModal>
             <div className="card"
-              onClick={() => modal3.current.open()}
+              onClick={() => {
+                modal3.current.open()
+                document.getElementsByClassName('fixed-nav')[0].className += ' hidden-nav'
+              }}
               onMouseEnter={() => setmodalHover3('hover-show')}
               onMouseLeave={() => setmodalHover3('hover-hidden')}
             >
@@ -89,7 +98,10 @@ const ProjectsScreen = ({pageRefs}) => {
             <ProjectModal ref={modal3} true>
               Project Modal 3
             </ProjectModal>
-            <div className="card" onClick={() => modal4.current.open()}>
+            <div className="card" onClick={() => {
+              modal4.current.open()
+              document.getElementsByClassName('fixed-nav')[0].className += ' hidden-nav'
+            }}>
               Project Image 4
             </div>
             <ProjectModal ref={modal4} fade>
