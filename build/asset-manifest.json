@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.619b41cd.chunk.css",
+    "main.css": "/static/css/main.1ae83272.chunk.css",
     "main.js": "/static/js/main.7fa46ee0.chunk.js",
     "main.js.map": "/static/js/main.7fa46ee0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5edeade5.js",
@@ -10,7 +10,7 @@
     "static/js/3.c6af98b6.chunk.js": "/static/js/3.c6af98b6.chunk.js",
     "static/js/3.c6af98b6.chunk.js.map": "/static/js/3.c6af98b6.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.619b41cd.chunk.css.map": "/static/css/main.619b41cd.chunk.css.map",
+    "static/css/main.1ae83272.chunk.css.map": "/static/css/main.1ae83272.chunk.css.map",
     "static/js/2.2bf265f5.chunk.js.LICENSE.txt": "/static/js/2.2bf265f5.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/home-page-background.d4f3997d.jpg",
     "static/media/Trevor Howard - Resume.9895f735.docx": "/static/media/Trevor Howard - Resume.9895f735.docx",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.5edeade5.js",
     "static/js/2.2bf265f5.chunk.js",
-    "static/css/main.619b41cd.chunk.css",
+    "static/css/main.1ae83272.chunk.css",
     "static/js/main.7fa46ee0.chunk.js"
   ]
 }
