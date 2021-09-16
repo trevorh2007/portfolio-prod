@@ -16,125 +16,160 @@
     box-sizing: border-box;
     margin: auto;
 
-    .modal {
-      width: 700px;
-      padding: 20px;
-      @include sm {
-        height: 75vh;
-        padding: 0px;
-      }
-    }
-
-    .modal-close {
-      position: absolute;
-      right: 20px;
-      top: 20px;
-      color: #5e5e5e;
-      cursor: pointer;
-      font-size: 1.5em;
-      padding: 7px;
-      background: rgba(255, 255, 255, 0.749);
-      border-radius: 50%;
-      width: 42px;
-      height: 42px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 999999;
-      box-sizing: border-box;
-      display: inline-block;
-      text-align: center;
-
-      @include lg {
-        position: relative;
-        left: 725px;
-        top: -10px;
-      }
-      
-      &:hover {
-          background: rgba(255, 255, 255, 0.989);
-      }
-    }
-
-    .modal-body {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      position: relative;
-      color: #fff;
-      .project1-gif {
-        min-height: 350px;
-        width: 100%;
-        background: url('../../assets/gifs/discord-bot1.gif') no-repeat center/contain;
-        @include md {
-          min-height: 575px;
-        }
-      }
-      .project-description {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 33%;
-      }
-      .project-btns {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding: 20px 0;
-        @include md {
-          flex-direction: row;
-        }
-        .btn {
-          width: 50%;
-          margin: 10px 0;
-          @include md {
-            width: auto;
-          }
-        }
-        .project-link-btn {
-          padding: 15px 40px;
-          background: #007bff;
-          &:hover {
-            cursor: pointer;
-          }
-        }
-        .project-source-btn {
-          padding: 15px 40px;
-          background: #007bff;
-          &:hover {
-            cursor: pointer;
-          }
-        }
-        .discord-btn {
-          display: flex;
-          flex-direction: column;
-          padding: 6px 40px;
-          background: #007bff;
-          &:hover {
-            cursor: pointer;
-          }
-          span {
-            font-size: 0.75rem;
-          }
-        }
-      }
-    }
-
-    .modal-fade {
-      animation: fade-in 1s 1 linear;
-      animation-fill-mode: forwards;
-      opacity: 0;
-    }
-
     .modal-overlay {
       width: 100%;
       height: 100%;
       position: absolute;
       top: 0;
       left: 0;
+    }
+
+    .modal {
+      width: 700px;
+      height: 100%;
+      padding-top: 25px;
+      @include sm {
+        height: 75vh;
+        padding: 0px;
+      }
+      .modal-close {
+        display: none;
+        @include sm {
+          position: absolute;
+          right: 20px;
+          top: 20px;
+          color: #5e5e5e;
+          cursor: pointer;
+          font-size: 1.5em;
+          padding: 7px;
+          background: rgba(255, 255, 255, 0.749);
+          border-radius: 50%;
+          width: 42px;
+          height: 42px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 999999;
+          box-sizing: border-box;
+          display: inline-block;
+          text-align: center;
+        }
+  
+        @include lg {
+          position: relative;
+          left: 725px;
+          top: -10px;
+        }
+        
+        &:hover {
+            background: rgba(255, 255, 255, 0.989);
+        }
+      }
+  
+      .modal-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        position: relative;
+        color: #fff;
+        .project-gifs {
+          min-height: 275px;
+          width: 100%;
+          background: url('../../assets/gifs/discord-bot1.gif') no-repeat center/contain;
+          @include sm {
+            min-height: 350px;
+          }
+          @include md {
+            min-height: 575px;
+          }
+        }
+        .project-description {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 20px;
+          font-size: 14px;
+          @include sm {
+            font-size: 18px;
+          }
+        }
+        .project-btns {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          padding: 10px 0 0 0;
+          @include md {
+            padding: 20px 0;
+            flex-direction: row;
+          }
+          .btn {
+            width: 50%;
+            margin: 10px 0;
+            @include md {
+              width: auto;
+            }
+          }
+          .project-link-btn {
+            padding: .5em;
+            background: #007bff;
+            &:hover {
+              cursor: pointer;
+            }
+            @include sm {
+              padding: 15px 35px;
+            }
+          }
+          .project-source-btn {
+            padding: .5em;
+            background: #007bff;
+            &:hover {
+              cursor: pointer;
+            }
+            @include sm {
+              padding: 15px 35px;
+            }
+          }
+          .discord-btn {
+            display: flex;
+            flex-direction: column;
+            padding: .5em;
+            background: #007bff;
+            &:hover {
+              cursor: pointer;
+            }
+            span {
+              font-size: 0.75rem;
+            }
+            @include sm {
+              padding: 7px 35px;
+            }
+          }
+        }
+      }
+      .mobile-close-modal {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        height: 50px;
+        width: 100vw;
+        background: #B33A3A;
+        @include sm {
+          display: none;
+        }
+      }
+    }
+    .modal-fade {
+      animation: fade-in 1s 1 linear;
+      animation-fill-mode: forwards;
+      opacity: 0;
     }
   }
 

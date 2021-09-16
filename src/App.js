@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import './App.scss'
 import LandingScreen from './components/landing-screen/landing-screen'
 import NavBar from './components/nav-bar/nav-bar'

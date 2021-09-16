@@ -34,6 +34,7 @@ export function ProjectModal({ children, fade = false, defaultOpened = false }, 
             <RiCloseFill />
           </span>
           <div className="modal-body">{children}</div>
+          <div className="mobile-close-modal" onClick={close}>Close modal</div>
         </div>
       </div>
     ) : null,

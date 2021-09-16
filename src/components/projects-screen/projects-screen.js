@@ -2,7 +2,9 @@ import React, { useRef, useState } from 'react'
 import './projects-screen.scss'
 
 import ProjectModal from '../project-modal/project-modal'
-import projectImage1 from '../../assets/images/DiscordProject.png'
+import moreThanTiredImage from '../../assets/images/more-than-tired-logo.svg'
+import narcolepsyLinkLogo from '../../assets/images/narc-temp-logo-lg.png'
+import { RiDiscordFill } from 'react-icons/ri'
 
 const ProjectsScreen = ({pageRefs}) => {
   const modal = useRef(null)
@@ -29,7 +31,7 @@ const ProjectsScreen = ({pageRefs}) => {
                  onMouseEnter={() => setmodalHover1('hover-show')}
                  onMouseLeave={() => setmodalHover1('hover-hidden')}
             >
-              <img src={projectImage1} alt="A screenshot of project one"/>
+              <RiDiscordFill className="discord-icon" />
               <div className={modalHover1}>
                 <div className="hover-title">
                   Discord Bot
@@ -37,7 +39,7 @@ const ProjectsScreen = ({pageRefs}) => {
               </div>
             </div>
             <ProjectModal ref={modal} true>
-              <div className="project1-gif" />
+              <div className="project-gifs" />
               <div className="project-description">
                 A commissioned Discord bot with fun commands for Saints Hall clan, playing Old School Runescape
               </div>
@@ -52,14 +54,32 @@ const ProjectsScreen = ({pageRefs}) => {
                 </div>
               </div>
             </ProjectModal>
-            <div className="card" onClick={() => modal2.current.open()}>
-              Project Image 2
+            <div className="card"
+              onClick={() => modal2.current.open()}
+              onMouseEnter={() => setmodalHover2('hover-show')}
+              onMouseLeave={() => setmodalHover2('hover-hidden')}
+            >
+              <img src={moreThanTiredImage} alt="More than tired"/>
+              <div className={modalHover2}>
+                <div className="hover-title">
+                  More Than Tired
+                </div>
+              </div>
             </div>
             <ProjectModal ref={modal2} fade>
               Project Modal 2
             </ProjectModal>
-            <div className="card" onClick={() => modal3.current.open()}>
-              Project Image 3
+            <div className="card"
+              onClick={() => modal3.current.open()}
+              onMouseEnter={() => setmodalHover3('hover-show')}
+              onMouseLeave={() => setmodalHover3('hover-hidden')}
+            >
+              <img src={narcolepsyLinkLogo} alt="Narcolepsy Link"/>
+              <div className={modalHover3}>
+                <div className="hover-title">
+                  Narcolepsy Link
+                </div>
+              </div>
             </div>
             <ProjectModal ref={modal3} true>
               Project Modal 3

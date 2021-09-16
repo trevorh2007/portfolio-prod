@@ -17,12 +17,14 @@
                 flex-direction: row;
             }
             .card {
+                position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 height: 200px;
                 margin: 10px;
+                background:rgba(255, 255, 255, 0.66);
 
                 @include sm {
                     flex-basis: calc(50% - 20px);
@@ -35,21 +37,25 @@
                 &:hover {
                     cursor: pointer;
                 }
-                img {
-                    height: 100%;
+                .discord-icon {
+                    height: 90%;
                     width: 100%;
-                    object-fit: cover;
-                    &:hover {
-                        opacity: 75%;
-                    }
+                    fill: #7289DA;
+                }
+                img {
+                    width: 75%;
                 }
                 .hover-hidden {
-                    display: none;
-                }
-                .hover-show {
                     display: block;
                     position: absolute;
-                    color: #00ffff;
+                    bottom: 10px;
+                    @include sm {
+                        display: none;
+                    }
+                }
+                .hover-show {
+                    position: absolute;
+                    bottom: 10px;
                     .hover-title {
                         font-size: 24px;
                     }
