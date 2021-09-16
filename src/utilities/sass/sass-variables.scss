@@ -11,7 +11,10 @@ $screen-lg-min: 992px;
 $screen-xl-min: 1200px;
 
 // Short devices (moto g4, galaxy s5)
-$screen-short-min: 650px;
+$screen-short-min: 800px;
+
+// shorter devices (iPhone 6/7/8)
+$screen-shorter-min: 650px;
 
 // Small devices
 @mixin sm {
@@ -50,6 +53,12 @@ $screen-short-min: 650px;
 
  @mixin short {
 	 @media (min-height: #{$screen-short-min}) {
+		 @content;
+	 }
+ }
+
+ @mixin shorter {
+	 @media (min-height: #{$screen-shorter-min}) {
 		 @content;
 	 }
  }
