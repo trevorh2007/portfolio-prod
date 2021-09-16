@@ -10,8 +10,8 @@ export function ProjectModal({ children, fade = false, defaultOpened = false }, 
 
   const close = useCallback(() => {
     setIsOpen(false)
-    var unhideNav = document.getElementsByClassName('fixed-nav')
-    unhideNav[0].classList.remove('hidden-nav')
+    document.getElementsByClassName('fixed-nav')[0].classList.remove('hidden-nav')
+    document.body.classList.remove('modal-open')
   }, [])
 
   useImperativeHandle(ref, () => ({

@@ -30,6 +30,7 @@ const ProjectsScreen = ({pageRefs}) => {
                  onClick={() => {
                    modal.current.open()
                    document.getElementsByClassName('fixed-nav')[0].className += ' hidden-nav'
+                   document.body.className += 'modal-open'
                 }}
                  onMouseEnter={() => setmodalHover1('hover-show')}
                  onMouseLeave={() => setmodalHover1('hover-hidden')}
@@ -66,6 +67,7 @@ const ProjectsScreen = ({pageRefs}) => {
               onClick={() => {
                 modal2.current.open()
                 document.getElementsByClassName('fixed-nav')[0].className += ' hidden-nav'
+                document.body.className += 'modal-open'
               }}
               onMouseEnter={() => setmodalHover2('hover-show')}
               onMouseLeave={() => setmodalHover2('hover-hidden')}
@@ -84,6 +86,7 @@ const ProjectsScreen = ({pageRefs}) => {
               onClick={() => {
                 modal3.current.open()
                 document.getElementsByClassName('fixed-nav')[0].className += ' hidden-nav'
+                document.body.className += 'modal-open'
               }}
               onMouseEnter={() => setmodalHover3('hover-show')}
               onMouseLeave={() => setmodalHover3('hover-hidden')}
@@ -101,6 +104,7 @@ const ProjectsScreen = ({pageRefs}) => {
             <div className="card" onClick={() => {
               modal4.current.open()
               document.getElementsByClassName('fixed-nav')[0].className += ' hidden-nav'
+              document.body.className += 'modal-open'
             }}>
               Project Image 4
             </div>
