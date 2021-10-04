@@ -86,6 +86,16 @@
             min-height: 575px;
           }
         }
+        .short-height-gif {
+          min-height: 290px;
+          width: 100%;
+          @include sm {
+            min-height: 350px;
+          }
+          @include md {
+            min-height: 450px;
+          }
+        }
         .project-description {
           display: flex;
           flex-direction: column;

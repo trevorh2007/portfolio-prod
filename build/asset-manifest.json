@@ -1,30 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.25e21e46.chunk.css",
-    "main.js": "/static/js/main.ce35b7b9.chunk.js",
-    "main.js.map": "/static/js/main.ce35b7b9.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5edeade5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5edeade5.js.map",
+    "main.css": "/static/css/main.fdf45dff.chunk.css",
+    "main.js": "/static/js/main.c0861360.chunk.js",
+    "main.js.map": "/static/js/main.c0861360.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.08105732.js",
+    "runtime-main.js.map": "/static/js/runtime-main.08105732.js.map",
     "static/js/2.2bf265f5.chunk.js": "/static/js/2.2bf265f5.chunk.js",
     "static/js/2.2bf265f5.chunk.js.map": "/static/js/2.2bf265f5.chunk.js.map",
-    "static/js/3.c6af98b6.chunk.js": "/static/js/3.c6af98b6.chunk.js",
-    "static/js/3.c6af98b6.chunk.js.map": "/static/js/3.c6af98b6.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.25e21e46.chunk.css.map": "/static/css/main.25e21e46.chunk.css.map",
+    "static/css/main.fdf45dff.chunk.css.map": "/static/css/main.fdf45dff.chunk.css.map",
     "static/js/2.2bf265f5.chunk.js.LICENSE.txt": "/static/js/2.2bf265f5.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/home-page-background.d4f3997d.jpg",
     "static/media/Trevor Howard - Resume.5d583a8a.docx": "/static/media/Trevor Howard - Resume.5d583a8a.docx",
     "static/media/Trevor Howard - Resume.ddc1870b.pdf": "/static/media/Trevor Howard - Resume.ddc1870b.pdf",
     "static/media/discord-bot1.19fec038.gif": "/static/media/discord-bot1.19fec038.gif",
-    "static/media/more-than-tired-logo.5ded002d.svg": "/static/media/more-than-tired-logo.5ded002d.svg",
-    "static/media/mtt1.5046b53c.gif": "/static/media/mtt1.5046b53c.gif",
+    "static/media/kanban-board.133c418f.svg": "/static/media/kanban-board.133c418f.svg",
+    "static/media/kanban.c04bfe21.gif": "/static/media/kanban.c04bfe21.gif",
     "static/media/narc-link1.be34cbb8.gif": "/static/media/narc-link1.be34cbb8.gif",
     "static/media/xyrem1.4797699d.gif": "/static/media/xyrem1.4797699d.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.5edeade5.js",
+    "static/js/runtime-main.08105732.js",
     "static/js/2.2bf265f5.chunk.js",
-    "static/css/main.25e21e46.chunk.css",
-    "static/js/main.ce35b7b9.chunk.js"
+    "static/css/main.fdf45dff.chunk.css",
+    "static/js/main.c0861360.chunk.js"
   ]
 }

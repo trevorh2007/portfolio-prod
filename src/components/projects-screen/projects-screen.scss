@@ -50,6 +50,9 @@
                 img {
                     width: 75%;
                 }
+                .width-50-img {
+                    width: 50%;
+                }
                 .hover-hidden {
                     display: block;
                     @include sm {
