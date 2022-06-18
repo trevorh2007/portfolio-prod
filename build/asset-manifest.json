@@ -1,28 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.fdf45dff.chunk.css",
-    "main.js": "/static/js/main.c0861360.chunk.js",
-    "main.js.map": "/static/js/main.c0861360.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.08105732.js",
-    "runtime-main.js.map": "/static/js/runtime-main.08105732.js.map",
-    "static/js/2.2bf265f5.chunk.js": "/static/js/2.2bf265f5.chunk.js",
-    "static/js/2.2bf265f5.chunk.js.map": "/static/js/2.2bf265f5.chunk.js.map",
+    "main.css": "/static/css/main.97015023.css",
+    "main.js": "/static/js/main.f1f70d0b.js",
+    "static/media/xyrem1.gif": "/static/media/xyrem1.4797699db57f5ecc47cb.gif",
+    "static/media/narc-link1.gif": "/static/media/narc-link1.be34cbb87109a1174205.gif",
+    "static/media/home-page-background.jpg": "/static/media/home-page-background.d4f3997d537e062f331d.jpg",
+    "static/media/kanban.gif": "/static/media/kanban.c04bfe210868cd04f7b1.gif",
+    "static/media/discord-bot1.gif": "/static/media/discord-bot1.19fec03829f9e18cdaa9.gif",
+    "static/media/Trevor Howard - Resume.pdf": "/static/media/Trevor Howard - Resume.ddc1870b51b8afe6317d.pdf",
+    "static/media/BebasNeue-Regular.ttf": "/static/media/BebasNeue-Regular.9aa03f9d52866893add5.ttf",
+    "static/media/Trevor Howard - Resume.docx": "/static/media/Trevor Howard - Resume.5d583a8ac0b23a78f49b.docx",
+    "static/media/kanbanBoard.svg": "/static/media/kanbanBoard.653f045e938e78c82987ebbf86157d2e.svg",
     "index.html": "/index.html",
-    "static/css/main.fdf45dff.chunk.css.map": "/static/css/main.fdf45dff.chunk.css.map",
-    "static/js/2.2bf265f5.chunk.js.LICENSE.txt": "/static/js/2.2bf265f5.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/static/media/home-page-background.d4f3997d.jpg",
-    "static/media/Trevor Howard - Resume.5d583a8a.docx": "/static/media/Trevor Howard - Resume.5d583a8a.docx",
-    "static/media/Trevor Howard - Resume.ddc1870b.pdf": "/static/media/Trevor Howard - Resume.ddc1870b.pdf",
-    "static/media/discord-bot1.19fec038.gif": "/static/media/discord-bot1.19fec038.gif",
-    "static/media/kanban-board.133c418f.svg": "/static/media/kanban-board.133c418f.svg",
-    "static/media/kanban.c04bfe21.gif": "/static/media/kanban.c04bfe21.gif",
-    "static/media/narc-link1.be34cbb8.gif": "/static/media/narc-link1.be34cbb8.gif",
-    "static/media/xyrem1.4797699d.gif": "/static/media/xyrem1.4797699d.gif"
+    "main.97015023.css.map": "/static/css/main.97015023.css.map",
+    "main.f1f70d0b.js.map": "/static/js/main.f1f70d0b.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.08105732.js",
-    "static/js/2.2bf265f5.chunk.js",
-    "static/css/main.fdf45dff.chunk.css",
-    "static/js/main.c0861360.chunk.js"
+    "static/css/main.97015023.css",
+    "static/js/main.f1f70d0b.js"
   ]
 }

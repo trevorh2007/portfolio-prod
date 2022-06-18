@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import "./projects-screen.scss";
 
 import ProjectModal from "../project-modal/project-modal";
-import kanbanBoardImage from "../../assets/images/kanban-board.svg";
+import kanbanBoardImage from "../../assets/images/kanbanBoard.svg";
 import narcolepsyLinkLogo from "../../assets/images/narc-temp-logo-lg.png";
 import xyremLogo from "../../assets/images/xyrem-sodium-oxybate-logo.png";
 
