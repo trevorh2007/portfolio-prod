@@ -1,218 +1,217 @@
-@import '../../utilities/sass/sass-variables.scss';
+@import "../../utilities/sass/sass-variables.scss";
 
 .modal-wrap {
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.85);
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    margin: auto;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: auto;
 
-    .modal-overlay {
+  .modal-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .modal {
+    width: 700px;
+    height: 100%;
+    @include sm {
+      height: 75vh;
+      padding: 0px;
+    }
+    .modal-close {
+      display: none;
+      @include sm {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: #5e5e5e;
+        cursor: pointer;
+        font-size: 1.5em;
+        padding: 7px;
+        background: rgba(255, 255, 255, 0.749);
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999999;
+        box-sizing: border-box;
+        display: inline-block;
+        text-align: center;
+      }
+
+      @include lg {
+        position: relative;
+        left: 725px;
+        top: -10px;
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.989);
+      }
+    }
+
+    .modal-body {
+      display: flex;
+      flex-direction: column;
       width: 100%;
       height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .modal {
-      width: 700px;
-      height: 100%;
-      @include sm {
-        height: 75vh;
-        padding: 0px;
+      z-index: 2;
+      position: relative;
+      color: #fff;
+      @include short {
+        justify-content: center;
       }
-      .modal-close {
-        display: none;
+      .project-gif {
+        min-height: 290px;
+        width: 100%;
         @include sm {
-          position: absolute;
-          right: 20px;
-          top: 20px;
-          color: #5e5e5e;
-          cursor: pointer;
-          font-size: 1.5em;
-          padding: 7px;
-          background: rgba(255, 255, 255, 0.749);
-          border-radius: 50%;
-          width: 42px;
-          height: 42px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          z-index: 999999;
-          box-sizing: border-box;
-          display: inline-block;
-          text-align: center;
+          min-height: 350px;
         }
-  
-        @include lg {
-          position: relative;
-          left: 725px;
-          top: -10px;
-        }
-        
-        &:hover {
-            background: rgba(255, 255, 255, 0.989);
+        @include md {
+          min-height: 575px;
         }
       }
-  
-      .modal-body {
+      .short-height-gif {
+        min-height: 290px;
+        width: 100%;
+        @include sm {
+          min-height: 350px;
+        }
+        @include md {
+          min-height: 450px;
+        }
+      }
+      .project-description {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        position: relative;
-        color: #fff;
+        padding: 10px 20px;
+        font-size: 14px;
+        li {
+          padding: 3px 0;
+        }
+        @include sm {
+          font-size: 18px;
+        }
+      }
+      .project-btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         @include short {
-          justify-content: center;
+          padding: 10px 0 0 0;
+          flex-direction: column;
         }
-        .project-gif {
-          min-height: 290px;
-          width: 100%;
-          @include sm {
-            min-height: 350px;
-          }
+        @include md {
+          padding: 20px 0;
+          flex-direction: row;
+        }
+        .btn {
+          width: 50%;
+          margin: 10px 0;
           @include md {
-            min-height: 575px;
+            width: auto;
           }
         }
-        .short-height-gif {
-          min-height: 290px;
-          width: 100%;
-          @include sm {
-            min-height: 350px;
-          }
-          @include md {
-            min-height: 450px;
-          }
-        }
-        .project-description {
+        .project-link-btn {
           display: flex;
           flex-direction: column;
-          padding: 10px 20px;
-          font-size: 14px;
-          li {
-            padding: 3px 0;
+          padding: 0.5em;
+          background: #007bff;
+          margin: 0 5px;
+          &:hover {
+            cursor: pointer;
+          }
+          @include short {
+            margin: 10px 0;
           }
           @include sm {
-            font-size: 18px;
+            padding: 15px 35px;
+          }
+          span {
+            font-size: 0.75rem;
           }
         }
-        .project-btns {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          align-items: center;
+        .project-source-btn {
+          padding: 0.5em;
+          background: #007bff;
+          margin: 0 5px;
+          &:hover {
+            cursor: pointer;
+          }
           @include short {
-            padding: 10px 0 0 0;
-            flex-direction: column;
-          }
-          @include md {
-            padding: 20px 0;
-            flex-direction: row;
-          }
-          .btn {
-            width: 50%;
             margin: 10px 0;
-            @include md {
-              width: auto;
-            }
           }
-          .project-link-btn {
-            display: flex;
-            flex-direction: column;
-            padding: .5em;
-            background: #007bff;
-            margin: 0 5px;
-            &:hover {
-              cursor: pointer;
-            }
-            @include short {
-              margin: 10px 0;
-            }
-            @include sm {
-              padding: 15px 35px;
-            }
-            span {
-              font-size: 0.75rem;
-            }
+          @include sm {
+            padding: 15px 35px;
           }
-          .project-source-btn {
-            padding: .5em;
-            background: #007bff;
-            margin: 0 5px;
-            &:hover {
-              cursor: pointer;
-            }
-            @include short {
-              margin: 10px 0;
-            }
-            @include sm {
-              padding: 15px 35px;
-            }
+        }
+        .discord-btn {
+          display: flex;
+          flex-direction: column;
+          padding: 0.5em;
+          background: #007bff;
+          margin: 0 5px;
+          &:hover {
+            cursor: pointer;
           }
-          .discord-btn {
-            display: flex;
-            flex-direction: column;
-            padding: .5em;
-            background: #007bff;
-            margin: 0 5px;
-            &:hover {
-              cursor: pointer;
-            }
-            @include short {
-              margin: 10px 0;
-            }
-            span {
-              font-size: 0.75rem;
-            }
-            @include sm {
-              padding: 7px 35px;
-            }
+          @include short {
+            margin: 10px 0;
+          }
+          span {
+            font-size: 0.75rem;
+          }
+          @include sm {
+            padding: 7px 35px;
           }
         }
       }
-      .mobile-close-modal {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        height: 50px;
-        width: 100vw;
-        background: #B33A3A;
-        @include sm {
-          display: none;
-        }
+    }
+    .mobile-close-modal {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      height: 50px;
+      width: 100vw;
+      background: #b33a3a;
+      @include sm {
+        display: none;
       }
     }
-
   }
+}
 
-  .modal-fade {
-    animation: fade-in 1s 1 linear;
-    animation-fill-mode: forwards;
-    opacity: .5;
-  }
+.modal-fade {
+  animation: fade-in 1s 1 linear;
+  animation-fill-mode: forwards;
+  opacity: 0.5;
+}
 
-  @keyframes fade-in {
-    0% {
-      animation-timing-function: cubic-bezier(0.2242, 0.7499, 0.3142, 0.8148);
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+@keyframes fade-in {
+  0% {
+    animation-timing-function: cubic-bezier(0.2242, 0.7499, 0.3142, 0.8148);
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}

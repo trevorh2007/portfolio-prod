@@ -1,10 +1,14 @@
-import React from 'react'
-import './landing-screen.scss'
-import {HiOutlineChevronRight} from 'react-icons/hi'
+import React from "react";
+import "./landing-screen.scss";
+import { HiOutlineChevronRight } from "react-icons/hi";
 
-const LandingScreen = ({pageRefs}) => {
+const LandingScreen = ({ pageRefs }) => {
   return (
-    <section id="home" className="landing-section" ref={el => pageRefs.current = { ...pageRefs.current, home: el }}>
+    <section
+      id="home"
+      className="landing-section"
+      ref={(el) => (pageRefs.current = { ...pageRefs.current, home: el })}
+    >
       <div className="landing-flex">
         <div className="landing-text">
           <div className="flex-row">
@@ -16,7 +20,14 @@ const LandingScreen = ({pageRefs}) => {
             <br />
             and maintaining elegant applications
           </div>
-          <div className="project-button" onClick={() => pageRefs.current['projects'].scrollIntoView({ behavior: 'smooth'})}>
+          <div
+            className="project-button"
+            onClick={() =>
+              pageRefs.current["projects"].scrollIntoView({
+                behavior: "smooth",
+              })
+            }
+          >
             <div className="btn">
               View Projects <HiOutlineChevronRight />
             </div>
@@ -24,7 +35,7 @@ const LandingScreen = ({pageRefs}) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default LandingScreen
+export default LandingScreen;

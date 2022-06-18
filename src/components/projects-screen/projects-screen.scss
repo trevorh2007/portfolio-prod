@@ -1,80 +1,80 @@
-@import '../../utilities/sass/sass-variables.scss';
-@import '../../utilities/sass/shared.scss';
+@import "../../utilities/sass/sass-variables.scss";
+@import "../../utilities/sass/shared.scss";
 
 .projects-section {
-    min-height: 100vh;
-    color: #fff;
-    background-color: rgba(255, 255, 255, 0);
-    padding-top: 50px;
-    .project-gallery {
-        width: 100%;
-        .project-cards {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  padding-top: 50px;
+  .project-gallery {
+    width: 100%;
+    .project-cards {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
 
-            @include sm {
-                flex-direction: row;
-            }
-            .card {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                flex-direction: column;
-                height: 200px;
-                margin: 10px;
-                background:rgba(255, 255, 255, 0.66);
+      @include sm {
+        flex-direction: row;
+      }
+      .card {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 200px;
+        margin: 10px;
+        background: rgba(255, 255, 255, 0.66);
 
-                @include sm {
-                    position: relative;
-                    justify-content: center;
-                    flex-basis: calc(50% - 20px);
-                }
-                @include md {
-                    flex-basis: calc(50% - 40px);
-                    height: 300px;
-                    margin: 20px;
-                }
-                &:hover {
-                    background: rgba(255, 255, 255, .9);
-                    cursor: pointer;
-                }
-                .discord-icon {
-                    height: 65%;
-                    width: 100%;
-                    fill: #7289DA;
-                    @include sm {
-                        height: 90%;
-                    }
-                }
-                img {
-                    width: 75%;
-                }
-                .width-50-img {
-                    width: 50%;
-                }
-                .hover-hidden {
-                    display: block;
-                    @include sm {
-                        position: absolute;
-                        bottom: 10px;
-                        display: none;
-                    }
-                }
-                .hover-show {
-                    @include sm {
-                        position: absolute;
-                        bottom: 10px;
-                    }
-                }
-                .hover-title {
-                    color: #000;
-                    font-size: 18px;
-                    @include sm {
-                        font-size: 24px;
-                    }
-                }
-            }
+        @include sm {
+          position: relative;
+          justify-content: center;
+          flex-basis: calc(50% - 20px);
         }
+        @include md {
+          flex-basis: calc(50% - 40px);
+          height: 300px;
+          margin: 20px;
+        }
+        &:hover {
+          background: rgba(255, 255, 255, 0.9);
+          cursor: pointer;
+        }
+        .discord-icon {
+          height: 65%;
+          width: 100%;
+          fill: #7289da;
+          @include sm {
+            height: 90%;
+          }
+        }
+        img {
+          width: 75%;
+        }
+        .width-50-img {
+          width: 50%;
+        }
+        .hover-hidden {
+          display: block;
+          @include sm {
+            position: absolute;
+            bottom: 10px;
+            display: none;
+          }
+        }
+        .hover-show {
+          @include sm {
+            position: absolute;
+            bottom: 10px;
+          }
+        }
+        .hover-title {
+          color: #000;
+          font-size: 18px;
+          @include sm {
+            font-size: 24px;
+          }
+        }
+      }
     }
+  }
 }

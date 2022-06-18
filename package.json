@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "build": "react-scripts build",
-    "dev": "react-scripts start"
+    "dev": "react-scripts start",
+    "prettier": "prettier --write \"src/**/*.js\""
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +45,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "prettier": "2.7.1",
     "react-test-renderer": "^17.0.1"
   }
 }
